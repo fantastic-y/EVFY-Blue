@@ -1,0 +1,147 @@
+#home {
+    background: no-repeat white url(img/homepage_bg.jpg);
+    background-size: cover;
+}
+#about {
+    background: no-repeat white url(img/about_bg.jpg);
+    background-size: contain;
+}
+header {
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 50px;
+}
+.main-header {
+    width: 100%;
+    padding-left: 50px;
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+}
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float: left;
+}
+/* Home Main */
+#home main {
+    padding: 3em 6em 3em 5.5em;
+    margin: 2em 0;
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: justify;
+}
+#home-info {
+    background-color: rgba(255, 255,255, 0.75);
+    width: 50%;
+    height: auto;
+    margin: 0;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 20px 20px;
+}
+#home main h1 {
+    font-size: 2em;
+    color:black;
+    border-bottom: solid #8cc63f;
+    margin-bottom: 30px;
+    text-align: justify;
+    font-weight: bold;
+    padding-top: 20px;
+}
+#home main p {
+    font-size: 1.2em;
+}
+#home button {
+    border: none;
+    background-color: #8cc63f;
+    color: white;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: left;
+    padding: 0 30px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+/* Home Section */
+#contact-box {
+    background-color: white;
+    width: fit-content;
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#home section h5 {
+    color: #8cc63f;
+    font-size: 1em;
+    text-align: center;
+    padding-top: 5px;
+}
+#home section h6 {
+    font-size: 1em;
+    padding: 0 1em;
+}
+/* About */
+#about-info {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding-top: 20px;
+}
+#about button {
+    border: none;
+    background-color: #8cc63f;
+    color: white;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: left;
+    padding: 0 15px;
+    margin: 0;
+}
+#about section {
+    margin-top: 200px;
+    padding-left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+#about section h2 {
+    color: #8cc63f;
+    font-size: 1.5em;
+}
+#about section h3 {
+    color: grey;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#about section h4 {
+    color: grey;
+}
+#about section p {
+    font-size: 1.2em;
+}
+#about section img{
+    width:500px;
+}
+#mission {
+    width: 100%;
+    background-color: lightgrey;
+    border: solid 1px #8cc63f;
+    margin-bottom: 10px;
+}
+#mission-info, #team-info {
+    padding: 30px 50px;
+}
+section #team-members {
+    padding-top: 100px;
+}
+section #team-members img {
+    width: 200px;
+    height: 200px;
+    margin-left: 80px;
+}
+section #team-members h2, #team-members h3 , #team-members h4 {
+    text-align: center;
+}
