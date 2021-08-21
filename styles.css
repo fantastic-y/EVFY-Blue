@@ -99,6 +99,26 @@ header {
 #about header {
     padding-top: 100px;
 }
+#circle-bg {
+    padding: 2em 0 2em 0;
+    text-align: center;
+    display: inline;
+}
+#about header .circle {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 1000px;
+    position:absolute;
+    left: 1500px;
+    top: -150px;
+}
+#about header .circle img {
+    width: auto;
+    float: right;
+}
 #about-info {
     font-family: Arial, Helvetica, sans-serif;
     width: 50%;
