@@ -92,6 +92,9 @@ header {
     padding: 0 1em;
 }
 /* About */
+#about header {
+    padding-top: 100px;
+}
 #about-info {
     font-family: Arial, Helvetica, sans-serif;
     width: 50%;
@@ -108,8 +111,6 @@ header {
     margin: 0;
 }
 #about section {
-    margin-top: 200px;
-    padding-left: 100px;
     font-family: Arial, Helvetica, sans-serif;
 }
 #about section h2 {
@@ -130,11 +131,15 @@ header {
 #about section img{
     width:500px;
 }
-#mission {
+#mission{
     width: 100%;
     background-color: lightgrey;
     border: solid 1px #8cc63f;
-    margin-bottom: 10px;
+    border-bottom: none;
+}
+#team{
+    width: 100%;
+    border: solid 1px #8cc63f;
 }
 #mission-info, #team-info {
     padding: 30px 50px;
