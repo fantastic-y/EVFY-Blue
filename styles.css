@@ -1,15 +1,20 @@
 #home {
     background: no-repeat white url(img/homepage_bg.jpg);
-    background-size: cover;
+    background-size: 100% 900px;
 }
 #about {
     background: no-repeat white url(img/about_bg.jpg);
-    background-size: contain;
+    background-size: 100% 900px;
+}
+#contact {
+    background: no-repeat white url(img/contact.jpg);
+    background-size: 100% 900px;
 }
 header {
     width: 100%;
     padding-left: 100px;
     padding-top: 50px;
+    height: 900px;
 }
 .main-header {
     width: 100%;
