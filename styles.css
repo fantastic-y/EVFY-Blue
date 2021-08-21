@@ -30,6 +30,18 @@
     background: no-repeat white url(img/contact.jpg);
     background-size: 100% 900px;
 }
+#partners {
+    background: no-repeat white url(img/partners_bg.jpg);
+    background-size: 100% 900px;
+}
+#login {
+    background: no-repeat white url(img/login-bg.jpg);
+    background-size: 100% 900px;
+}
+#sustainability-index {
+    background: no-repeat white url(img/sus-index_bg.jpg);
+    background-size: 100% 900px;
+}
 header {
     width: 100%;
     padding-left: 100px;
@@ -112,6 +124,29 @@ header {
     padding: 0 1em;
 }
 /* About */
+#about header {
+    padding-top: 100px;
+}
+#circle-bg {
+    padding: 2em 0 2em 0;
+    text-align: center;
+    display: inline;
+}
+#about header .circle {
+    display: inline-block;
+    margin: 0.5em;
+    padding: 1.3em 1.5em;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 1000px;
+    position:absolute;
+    left: 1500px;
+    top: -150px;
+}
+#about header .circle img {
+    width: auto;
+    float: right;
+}
 #about-info {
     font-family: Arial, Helvetica, sans-serif;
     width: 50%;
@@ -127,16 +162,16 @@ header {
     padding: 0 15px;
     margin: 0;
 }
-#about section {
-    margin-top: 200px;
-    padding-left: 100px;
+#about section, #sustainability-index section {
     font-family: Arial, Helvetica, sans-serif;
 }
-#about section h2 {
+#about section h2, #sustainability-index section h2 {
+    padding-top: 20px;
     color: #8cc63f;
     font-size: 1.5em;
+    font-weight: bold;
 }
-#about section h3 {
+#about section h3{
     color: grey;
     font-size: 1.5em;
     font-weight: bold;
@@ -144,19 +179,23 @@ header {
 #about section h4 {
     color: grey;
 }
-#about section p {
+#about section p, #sustainability-index section p {
     font-size: 1.2em;
 }
 #about section img{
     width:500px;
 }
-#mission {
+#mission, #sus-content{
     width: 100%;
-    background-color: lightgrey;
+    background-color: #f5f5f5;
     border: solid 1px #8cc63f;
-    margin-bottom: 10px;
+    border-bottom: none;
 }
-#mission-info, #team-info {
+#team, #methodology{
+    width: 100%;
+    border: solid 1px #8cc63f;
+}
+#mission-info, #team-info, #method-info, #index-info {
     padding: 30px 50px;
 }
 section #team-members {
@@ -169,4 +208,176 @@ section #team-members img {
 }
 section #team-members h2, #team-members h3 , #team-members h4 {
     text-align: center;
+}
+/* partners */
+#partners header h1, #sustainability-index header h1 {
+    font-size: 100px;
+    padding-top: 300px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+#partners header button, #sustainability-index header button {
+    border: none;
+    background-color: #8cc63f;
+    color: white;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: left;
+    padding: 0 15px;
+    margin: 600px 20px;
+}
+#about-info {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 50%;
+    padding-top: 20px;
+}
+#partners section img{
+    height: 240px;
+}
+#piconi{
+    width: 100%;
+    background-color: #f5f5f5;
+    border: solid 1px #8cc63f;
+    border-bottom: none;
+}
+#sprouts{
+    width: 100%;
+    background-color: #f5f5f5;
+    border: solid 1px #8cc63f;
+}
+#bird{
+    width: 100%;
+    border: solid 1px #8cc63f;
+    border-bottom: none;
+}
+#partners section h2 {
+    padding-top: 20px;
+    padding-left: 30px;
+    color: #8cc63f;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#partners section p {
+    font-size: 1.2em;
+    padding-left: 30px;
+}
+/* login */
+#login * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+#login header h1 {
+    font-size: 100px;
+    color: white;
+}
+#login header h2 {
+    font-size: 50px;
+    color: white;
+    font-weight: normal;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+  }
+  
+  /* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #c62610;
+    color: white;
+  }
+  
+  /* position the close button */
+.imgcontainer {
+    margin: 24px 0 12px 0;
+    position: relative;
+  }
+  
+.container {
+    padding: 16px;
+  }
+  
+span.psw {
+    float: right;
+    padding-top: 16px;
+  }
+  
+  /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    padding-top: 60px;
+  }
+  
+  /* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+  }
+  
+.close:hover, .close:focus {
+    color: red;
+    cursor: pointer;
+  }
+  
+  /* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+  }
+  
+@-webkit-keyframes animatezoom {
+    from {-webkit-transform: scale(0)} 
+    to {-webkit-transform: scale(1)}
+  }
+    
+@keyframes animatezoom {
+    from {transform: scale(0)} 
+    to {transform: scale(1)}
+  }
+  
+  /* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+       display: block;
+       float: none;
+    }
+    .cancelbtn {
+       width: 100%;
+    }
+  }
+
+/* sustainability index */
+#sustainability-index section img{
+    height: 350px;
 }
