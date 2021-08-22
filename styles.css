@@ -8,19 +8,68 @@
     font-size: 1.1em;
 }
 
+img {
+    max-width: 100%;
+}
+
+.navbar .nav-item .dropdown-menu {
+    /* background: linear-gradient(to bottom, rgba(0, 68, 0),rgba(140, 198, 63, 1)); */
+    background-color: black;
+    border: 2px solid rgba(140, 198, 63, 1);
+    border-radius: 20px 0 20px 0;
+}
+.navbar .dropdown-item {
+    color: white;
+}
+
+.navbar .dropdown-item:focus, .navbar .dropdown-item:hover {
+    background-color: transparent;
+    text-decoration: underline;
+    color: white;
+}
+
+.navbar .active {
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 1) !important;
+    letter-spacing: 0.05 !important;
+}
+
+.bg-nav {
+    width: fit-content;
+    background-color: rgba(0,0,0,0.6);
+    padding: 1em !important;
+    border-radius: 20px 0 20px 0;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
 
 @media all and (min-width: 992px) {
-	.navbar .nav-item .dropdown-menu{ display: none; background: linear-gradient(to bottom, rgb(140, 198, 63, 0.2),rgb(140, 198, 63, 1)); }
+	.navbar .nav-item .dropdown-menu{ display: none; margin-top:0; }
 	/* .navbar .nav-item:hover .nav-link{   } */
-	.navbar .nav-item:hover .dropdown-menu{ display: block; }
-	.navbar .nav-item .dropdown-menu{ margin-top:0; }
+	.navbar .nav-item:hover .dropdown-menu{ display: block;}
 }
 
 /*  */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    text-align: left;
+}
+
+.container {
+    max-width: 60rem;
+}
 
 #home {
     background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.8), rgba(0,0,0,0)), no-repeat, url(img/homepage_bg.jpg) ;
-    background-size: 100% 900px;
+    /* background-size: 100% 900px; */
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: rgb(140, 198, 63, 1);
 }
 #about {
     background: no-repeat white url(img/about_bg.jpg);
@@ -44,48 +93,34 @@
 }
 header {
     width: 100%;
-    padding-left: 100px;
+    /* padding-left: 100px;
     padding-top: 50px;
-    height: 900px;
+    height: 900px; */
 }
 .main-header {
     width: 100%;
     padding-left: 50px;
     margin: 2em auto 0 auto;
     min-height: 100px;
-    height: 100px;
+    /* height: 100px; */
 }
-.main-header .logo img {
-    width: 100px;
-    height: 100px;
-    margin: 0 2em 0 0;
-    float: left;
+.logo img {
+    max-width: 100px;
 }
 /* Home Main */
 #home main {
     padding: 3em 6em 3em 5.5em;
     margin: 2em 0;
-    font-family:Arial, Helvetica, sans-serif;
-    text-align: justify;
 }
 #home-info {
-    background-color: rgba(255, 255,255, 0.75);
-    width: 50%;
-    height: auto;
-    margin: 0;
-    position: absolute;
-    top: 35%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding: 20px 20px;
+    max-width: 30rem;
+    color: #fff;
 }
 #home main h1 {
     font-size: 2em;
-    color:black;
+    color:white;
     border-bottom: solid #8cc63f;
     margin-bottom: 30px;
-    text-align: justify;
     font-weight: bold;
     padding-top: 20px;
 }
@@ -93,34 +128,42 @@ header {
     font-size: 1.2em;
 }
 #home button {
-    border: none;
-    background-color: #8cc63f;
+    border: 4px solid #8cc63f;
+    border-radius: 20px 0 20px 0;
+    background-color: black;
+    box-shadow: 3px 3px 1px rgb(29, 29, 29);
     color: white;
     font-size: 1.2em;
-    width: 200px;
-    text-align: left;
-    padding: 0 30px;
+    width: fit-content;
+    text-align: center;
+    padding: 0.3em 1.2em;
     margin: 0;
-    position: absolute;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
+    float: right;
+}
+#home button:hover , #home button:focus{
+    background-color: #8cc63f;
+    transition: ease 500ms;
+    /* border: 2px solid #9ba193; */
 }
 /* Home Section */
 #contact-box {
+    position: fixed;
+    top: 12em;
+    right: 0;
     background-color: white;
     width: fit-content;
     float: right;
-    font-family: Arial, Helvetica, sans-serif;
 }
+
 #home section h5 {
     color: #8cc63f;
-    font-size: 1em;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
     text-align: center;
     padding-top: 5px;
 }
 #home section h6 {
-    font-size: 1em;
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    letter-spacing: 0.05em;
     padding: 0 1em;
 }
 /* About */
