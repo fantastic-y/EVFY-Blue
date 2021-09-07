@@ -249,7 +249,7 @@ section #team-members h2, #team-members h3 , #team-members h4 {
     width: 200px;
     text-align: left;
     padding: 0 15px;
-    margin-left: -320px;
+    margin-left: 50px;
     margin-top: 50px;
 }
 #about-info {
@@ -651,7 +651,7 @@ footer {
   #subscription-tiers section {
       margin-bottom: 50px;
   }
-  #subscription-tiers button {
+  #signup-button {
     font-size: 18pt;
     position: absolute;
     left: 50%;
