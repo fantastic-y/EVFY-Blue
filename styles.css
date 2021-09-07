@@ -381,3 +381,274 @@ span.psw {
 #sustainability-index section img{
     height: 350px;
 }
+
+/* Footer */
+footer {
+    background: linear-gradient(to bottom, rgba(24, 7, 7, 0.3), rgb(32, 29, 29));
+    width: 100%;
+    color: #fff;
+    padding: 2em;
+  }
+  footer a:link {
+    text-decoration: none;
+    color: #fff;
+  }
+  .logo-footer, .sub-wow {
+    position: absolute;
+    right: 0;
+  }
+  .social-icon {
+    color: #fff;
+    margin-right: .3em;
+  }
+  .footer-info {
+    margin-left: -6em;
+  }
+  .footer-para {
+    line-height: 3.9pt;
+  }
+  .logo-footer {
+    height: auto;
+    width: 6em;
+  }
+  .sub-wow {
+    font-size: 10pt;
+    margin-top: 7.9em;
+  }
+  
+/* Subscription-tiers head section */
+#subscription-tiers header {
+    background: url(img/subs.jpg) no-repeat;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    background-size: 1500px;
+    font-weight: bold;
+  }
+  #subscription-tiers .center {
+    text-align: center;
+  }
+  #subscription-tiers header h3 {
+    color: #fff;
+    line-height: 0.9pt;
+    font-weight: normal;
+    font-family: Nunito Sans;
+    font-size: 40pt;
+  }
+  .tires {
+    margin-left: 3.4em;
+  }
+  .sub_info {
+    max-width: 32em;
+    color: #fff;
+    margin-left: 10em;
+    float: right;
+    font-family: Nunito Sans;
+    font-size: 16pt;
+    margin-right: 2em;
+  }
+  .header-text1 {
+    display: inline-flex;
+  }
+  #subscription-tiers main {
+    display: inline-flex;
+  }
+  table {
+    font-family: "Nunito Sans", sans-serif;
+    border: 3px solid #fff;
+  }
+  thead {
+    background-color: #7fb75f;
+    color: #fff;
+  }
+  td {
+    font-size: 14pt;
+  }
+  td,
+  th {
+    border: 2px solid #fff;
+    padding: 0.5em;
+  }
+  h3 {
+    color: #8cc63f;
+    font-weight: bold;
+    font-size: 24pt;
+  }
+  
+  /* subscription-tires body */
+  #subscription-tiers {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #ededed;
+  }
+  .layer {
+    width: 100%;
+    height: 100vh;
+    background: #000;
+    opacity: 60%;
+    position: absolute;
+  }
+  .all_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .span1 {
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+    margin-left: 1.6em;
+  }
+  .span2 {
+    margin-bottom: 1em;
+  }
+  .span3 {
+    margin-bottom: 1em;
+    margin-left: 1.6em;
+  }
+  .span1,
+  .span2,
+  .span3,
+  .logo {
+    line-height: 0.9pt;
+    position: relative;
+    margin-right: -0.1em;
+  }
+  .vert-line {
+    height: 15em;
+    border-right: 4px solid #fff;
+    position: relative;
+  }
+  .sub_info,
+  .right {
+    margin-right: 2em;
+  }
+  .left,
+  .middle,
+  .right {
+    margin-top: 3em;
+    padding-top: 100px;
+    padding-left: 100px;
+  }
+  .sub_info p {
+    position: relative;
+  }
+  
+  /*subscription-tiers main body */
+  .first-div {
+    margin-top: 7em;
+    margin-bottom: 25em;
+    width: 100%;
+  }
+  
+  .reflection {
+    width: 510px;
+    height: 450px;
+    position: relative;
+    background: url(img/mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    /*box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1);*/
+  }
+  .reflection::after {
+    content: "";
+    margin: 0;
+    background: inherit;
+    width: 28.14em;
+    height: 40%;
+    position: absolute;
+    bottom: -32%;
+    left: 0;
+    background-size: cover;
+    transform: scaleY(-1);
+    background-position: bottom;
+    opacity: 0.4;
+    background-repeat: inherit;
+  }
+  .reflection::before {
+    content: "";
+    width: 28.14em;
+    height: 40%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    bottom: -32%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), #ededed);
+    z-index: 1;
+    margin: inherit;
+  }
+  .phone {
+    background: url(img/Picture4.png);
+    width: auto;
+    height: 268px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 50%;
+    left: 19.4%;
+    top: 21%;
+    bottom: 50%;
+  }
+  .phone::after {
+      content: "";
+      margin: 0;
+      background: inherit;
+      width: 8.54em;
+      height: 25%;
+      position: absolute;
+      bottom: -78%;
+      left: 0;
+      background-size: cover;
+      transform: scaleY(-1);
+      background-position: bottom;
+      opacity: 0.3;
+      background-repeat: inherit;
+  }
+  .para-3 {
+    width: 80%;
+    font-size: 21pt;
+    font-family: 'Nunito', sans-serif;
+  }
+  .para-4 {
+    font-size: 14pt;
+    font-family: "Nunito Sans", sans-serif;
+  }
+  .sec-div {
+    width: 100%;
+    margin-bottom: -15em;
+  }
+  .div-center {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+  }
+  /* Subscription-tiers Tables */
+  .td1 {
+    background-color: #d5e3cf;
+  }
+  .td2 {
+    background-color: #ebf1e9;
+  }
+  .first-column {
+    font-weight: bold;
+    font-weight: 16pt;
+  }
+  #subscription-tiers button {
+    font-size: 18pt;
+    position: absolute;
+    left: 50%;
+    right: 30%;
+    transform: translate(-50%, -50%);
+    padding: 0.2em;
+    border: 0;
+  }
+  #subscription-tiers .btn:hover {
+    background-color: #7fb75f;
+  }  
