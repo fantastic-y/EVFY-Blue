@@ -24,24 +24,37 @@
 }
 #about {
     background: no-repeat white url(img/about_bg.jpg);
-    background-size: 100% 700px;
+    background-size: 100% 800px;
 }
 #contact {
     background: no-repeat white url(img/contact.jpg);
-    background-size: 100% 700px;
+    background-size: 100% 800px;
 }
 #partners {
     background: no-repeat white url(img/partners_bg.jpg);
-    background-size: 100% 700px;
+    background-size: 100% 800px;
 }
 #login {
     background: no-repeat white url(img/login-bg.jpg);
-    background-size: 100% 700px;
+    background-size: 100% 800px;
 }
 #sustainability-index {
     background: no-repeat white url(img/sus-index_bg.jpg);
-    background-size: 100% 700px;
+    background-size: 100% 800px;
 }
+#subscription-tiers {
+    background: url(img/subs.jpg) no-repeat;
+    background-size: 100% 800px;
+}
+#subscription-tiers .layer {
+    width: 100%;
+    height: 800px;
+    background: #000;
+    opacity: 60%;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -180px;
+  }
 header {
     width: 100%;
     padding-left: 100px;
@@ -124,7 +137,7 @@ header {
 }
 /* About */
 #about header {
-    padding-top: 100px;
+    padding-top: 80px;
 }
 #circle-bg {
     padding: 2em 0 2em 0;
@@ -137,9 +150,9 @@ header {
     padding: 1.3em 1.5em;
     background-color: #fff;
     border-radius: 50%;
-    width: 1000px;
+    width: 900px;
     position:absolute;
-    left: 1500px;
+    left: 1000px;
     top: -150px;
 }
 #about header .circle img {
@@ -416,15 +429,6 @@ footer {
   }
   
 /* Subscription-tiers head section */
-#subscription-tiers header {
-    background: url(img/subs.jpg) no-repeat;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 100vh;
-    width: 100%;
-    background-size: 1500px;
-    font-weight: bold;
-  }
   #subscription-tiers .center {
     text-align: center;
   }
@@ -485,13 +489,7 @@ footer {
     text-align: left;
     background-color: #ededed;
   }
-  .layer {
-    width: 100%;
-    height: 100vh;
-    background: #000;
-    opacity: 60%;
-    position: absolute;
-  }
+
   .all_item {
     display: flex;
     justify-content: center;
