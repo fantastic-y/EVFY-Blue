@@ -20,7 +20,7 @@
 
 #home {
     background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.8), rgba(0,0,0,0)), no-repeat url(img/homepage_bg.jpg) ;
-    background-size: 100% 700px;
+    background-size: 100%;
 }
 #about {
     background: no-repeat white url(img/about_bg.jpg);
@@ -46,7 +46,7 @@ header {
     width: 100%;
     padding-left: 100px;
     padding-top: 50px;
-    height: 900px;
+    height: 700px;
 }
 .main-header {
     width: 100%;
@@ -72,7 +72,7 @@ header {
     height: 365px;
     margin: 0;
     position: absolute;
-    top: 45%;
+    top: 50%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -107,8 +107,9 @@ header {
 /* Home Section */
 #contact-box {
     background-color: white;
-    width: fit-content;
-    float: right;
+    position: absolute;
+    margin-top: -550px;
+    margin-left: 87%;
     font-family: Arial, Helvetica, sans-serif;
 }
 #home section h5 {
