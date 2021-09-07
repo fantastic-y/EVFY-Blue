@@ -239,7 +239,18 @@ section #team-members h2, #team-members h3 , #team-members h4 {
     width: 200px;
     text-align: left;
     padding: 0 15px;
-    margin: 600px 20px;
+    margin: 480px 20px;
+}
+#subscription-tiers header button {
+    border: none;
+    background-color: #8cc63f;
+    color: white;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: left;
+    padding: 0 15px;
+    margin-left: -320px;
+    margin-top: 50px;
 }
 #about-info {
     font-family: Arial, Helvetica, sans-serif;
@@ -529,7 +540,7 @@ footer {
   .right {
     margin-top: 3em;
     padding-top: 100px;
-    padding-left: 100px;
+    padding-left: 50px;
   }
   .sub_info p {
     position: relative;
@@ -637,11 +648,15 @@ footer {
     font-weight: bold;
     font-weight: 16pt;
   }
+  #subscription-tiers section {
+      margin-bottom: 50px;
+  }
   #subscription-tiers button {
     font-size: 18pt;
     position: absolute;
     left: 50%;
     right: 30%;
+    top: 110%;
     transform: translate(-50%, -50%);
     padding: 0.2em;
     border: 0;
