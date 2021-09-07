@@ -19,7 +19,7 @@
 /*  */
 
 #home {
-    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.8), rgba(0,0,0,0)), no-repeat, url(img/homepage_bg.jpg) ;
+    background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.8), rgba(0,0,0,0)), no-repeat url(img/homepage_bg.jpg) ;
     background-size: 100% 700px;
 }
 #about {
@@ -63,18 +63,16 @@ header {
 }
 /* Home Main */
 #home main {
-    padding: 3em 6em 3em 5.5em;
-    margin: 2em 0;
     font-family:Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 #home-info {
     background-color: rgba(255, 255,255, 0.75);
     width: 50%;
-    height: auto;
+    height: 365px;
     margin: 0;
     position: absolute;
-    top: 35%;
+    top: 45%;
     left: 50%;
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
@@ -96,7 +94,7 @@ header {
     border: none;
     background-color: #8cc63f;
     color: white;
-    font-size: 1.2em;
+    font-size: 1em;
     width: 200px;
     text-align: left;
     padding: 0 30px;
