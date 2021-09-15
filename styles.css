@@ -23,7 +23,7 @@
   border-bottom: solid 2px rgb(140, 198, 63, 1);
   padding: 0.4em;
   background-color: #3d80164d;
-  border-top-right-radius: .8em;
+  border-top-right-radius: 0.8em;
 }
 
 .nav-link {
@@ -104,32 +104,63 @@ nav {
   height: 100vh;
   width: 100vw;
 }
+.Lheader {
+  /*This is for login page*/
+  background: no-repeat white url(img/login-bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.Cheader {
+  /*This is for contact page*/
+  background: no-repeat white url(img/contact.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.Pheader {
+  /*This is for partners page*/
+  background: no-repeat white url(img/partners_bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.STheader {
+  /*This is for sustainablity tiers page*/
+  background: url(img/subs.jpg) no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
+.SIheader {
+  /*This is for sustainablity index page*/
+  background: no-repeat white url(img/sus-index_bg.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+}
 /*#home {
-  /* code is in Hheader section 
+   
 }
 #about {
-    /* code is in Aheader section 
-}*/
+    
+}
 #contact {
-  background: no-repeat white url(img/contact.jpg);
-  background-size: 100% 800px;
+  
 }
 #partners {
-  background: no-repeat white url(img/partners_bg.jpg);
-  background-size: 100% 800px;
+  
 }
 #login {
-  background: no-repeat white url(img/login-bg.jpg);
-  background-size: 100% 800px;
+  
 }
 #sustainability-index {
-  background: no-repeat white url(img/sus-index_bg.jpg);
+  
   background-size: 100% 800px;
 }
 #subscription-tiers {
-  background: url(img/subs.jpg) no-repeat;
-  background-size: 100% 800px;
-}
+  
+}*/
 #subscription-tiers .layer {
   width: 100%;
   height: 800px;
@@ -207,12 +238,16 @@ header {
   background: linear-gradient(to top, #3c9706, #73bd48);
 }
 /* Home Section */
+section #contact-box{
+  z-index: 2;
+}
 #contact-box {
   background-color: white;
-  position: absolute;
+  position: relative;
   margin-top: -550px;
   margin-left: 87%;
   font-family: Arial, Helvetica, sans-serif;
+  
 }
 #home section h5 {
   color: #8cc63f;
@@ -551,7 +586,17 @@ footer a:link {
   font-size: 10pt;
   margin-top: 7.9em;
 }
-
+.copyright-footer {
+  margin-top: 0.5em;
+}
+a:link, .footer-policy {
+  color: #8cc63f;
+  text-decoration: underline;
+}
+.footer-policy:hover {
+  color: #8ce616;
+  cursor: pointer;
+}
 /* Subscription-tiers head section */
 #subscription-tiers .center {
   text-align: center;
