@@ -416,6 +416,10 @@ footer {
     text-decoration: none;
     color: #fff;
   }
+  footer a{
+    color: white;
+    font-size: small;
+  }
   .logo-footer, .sub-wow {
     position: absolute;
     right: 0;
