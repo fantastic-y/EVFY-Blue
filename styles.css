@@ -3,7 +3,7 @@
     display: none;
 }
 .nav-font{
-    font-family:Arial, Helvetica, sans-serif;
+    font-family:'Nunito Sans', sans-serif;
     font-weight: 520;
     font-size: 1.1em;
 }
@@ -21,30 +21,37 @@
 #home {
     background: linear-gradient(to right, rgb(0, 0, 0), rgba(0,0,0,0.8), rgba(0,0,0,0)), no-repeat url(img/homepage_bg.jpg) ;
     background-size: 100%;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #about {
     background: no-repeat white url(img/about_bg.jpg);
     background-size: 100% 800px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #contact {
     background: no-repeat white url(img/contact.jpg);
     background-size: 100% 800px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #partners {
     background: no-repeat white url(img/partners_bg.jpg);
     background-size: 100% 800px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #login {
     background: no-repeat white url(img/login-bg.jpg);
     background-size: 100% 800px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #sustainability-index {
     background: no-repeat white url(img/sus-index_bg.jpg);
     background-size: 100% 800px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #subscription-tiers {
     background: url(img/subs.jpg) no-repeat;
     background-size: 100% 800px;
+    font-family: 'Nunito Sans', sans-serif;
 }
 #subscription-tiers .layer {
     width: 100%;
@@ -76,7 +83,6 @@ header {
 }
 /* Home Main */
 #home main {
-    font-family:Arial, Helvetica, sans-serif;
     text-align: justify;
 }
 #home-info {
@@ -142,7 +148,6 @@ header {
     float: right;
 }
 #about-info {
-    font-family: Arial, Helvetica, sans-serif;
     width: 50%;
     padding-top: 20px;
 }
@@ -155,9 +160,6 @@ header {
     text-align: left;
     padding: 0 15px;
     margin: 0;
-}
-#about section, #sustainability-index section {
-    font-family: Arial, Helvetica, sans-serif;
 }
 #about section h2, #sustainability-index section h2 {
     padding-top: 20px;
@@ -235,7 +237,6 @@ section #team-members h2, #team-members h3 , #team-members h4 {
     margin-top: 50px;
 }
 #about-info {
-    font-family: Arial, Helvetica, sans-serif;
     width: 50%;
     padding-top: 20px;
 }
@@ -270,9 +271,6 @@ section #team-members h2, #team-members h3 , #team-members h4 {
     padding-left: 30px;
 }
 /* login */
-#login * {
-    font-family: Arial, Helvetica, sans-serif;
-}
 #login header h1 {
     font-size: 100px;
     color: white;
@@ -393,6 +391,7 @@ footer {
     width: 100%;
     color: #fff;
     padding: 2em;
+    font-family: 'Nunito Sans', sans-serif;
   }
   footer a:link {
     text-decoration: none;
@@ -433,7 +432,6 @@ footer {
     color: #fff;
     line-height: 0.9pt;
     font-weight: normal;
-    font-family: Nunito Sans;
     font-size: 40pt;
   }
   .tires {
@@ -444,7 +442,6 @@ footer {
     color: #fff;
     margin-left: 10em;
     float: right;
-    font-family: Nunito Sans;
     font-size: 16pt;
     margin-right: 2em;
   }
@@ -455,7 +452,6 @@ footer {
     display: inline-flex;
   }
   table {
-    font-family: "Nunito Sans", sans-serif;
     border: 3px solid #fff;
   }
   thead {
@@ -607,11 +603,9 @@ footer {
   .para-3 {
     width: 80%;
     font-size: 21pt;
-    font-family: 'Nunito', sans-serif;
   }
   .para-4 {
     font-size: 14pt;
-    font-family: "Nunito Sans", sans-serif;
   }
   .sec-div {
     width: 100%;
@@ -649,4 +643,4 @@ footer {
   }
   #subscription-tiers .btn:hover {
     background-color: #7fb75f;
-  }  
+  }
