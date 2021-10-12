@@ -9,83 +9,81 @@
   <!-- Google font for Nunito sans and Nunito-->
   <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="css/styles.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body id="subscription-tiers">
   <div class="container main-header sticky-top">
-    <!--logo-->
-    <!-- <div class="logo">
-        <img src="img/EVFY Logos/EVFY_logos-Black_green_green_border_RGB_HR.png" alt="EVFY Green Logo">
-    </div> -->
-    <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark nav-font pb-1 navbar-custom main-menu">
-      <a class="navbar-brand logo" href="#">
-        <img src="img/EVFY Logos/EVFY_logo_white.png" alt="EVFY Green Logo" class="d-inline-block align-top">
-        <span class="hidden">EVFY</span>
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu"
-        aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="toggleMobileMenu">
+    <nav class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu">
+        <a class="navbar-brand logo" href="/">
+          <img src="/img/logo/EVFY_logo_white.png" alt="EVFY White Logo"
+          class="d-inline-block align-top">
+            <span class="hidden">EVFY</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu"
+            aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="toggleMobileMenu">
 
-        <ul class="navbar-nav ms-auto text-center">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="about.html" id="navbarDropdown1" role="button"
-              aria-haspopup="true" aria-expanded="false">
-              About EVFY
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-              <li><a href="about.html#mission" class="dropdown-item">Our Mission</a></li>
-              <li><a href="about.html#team" class="dropdown-item">Our Team</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="sustainabilityindex.html" id="navbarDropdown2" role="button"
-              aria-haspopup="true" aria-expanded="false">
-              Sustainability Index
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-              <li><a href="sustainabilityindex.html#sus-content" class="dropdown-item">The Index</a></li>
-              <li><a href="sustainabilityindex.html#methodology" class="dropdown-item">Methodology</a></li>
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="subscription-tiers.html">Sustainability Roadmap</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="partners.html" id="navbarDropdown3" role="button"
-              aria-haspopup="true" aria-expanded="false">
-              Partners
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-              <li><a href="partners.html" class="dropdown-item">Partner Stories</a></li>
-              <li><a href="partners.html#piconi" class="dropdown-item">- Piconi Farm</a></li>
-              <li><a href="partners.html#bird" class="dropdown-item">- Early Bird Wines</a></li>
-              <li><a href="partners.html#sprouts" class="dropdown-item">- Sprouts</a></li>
-            </ul>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="login.html" id="navbarDropdown4" role="button"
-              aria-haspopup="true" aria-expanded="false">
-              Login
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-              <li><a href="login.html" class="dropdown-item">See Your Index Score</a></li>
+            <ul class="navbar-nav ms-auto text-center">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/about" id="navbarDropdown1" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        About EVFY
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a href="/about#mission" class="dropdown-item">Our Mission</a></li>
+                        <li><a href="/about#team" class="dropdown-item">Our Team</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/sustainabilityindex" id="navbarDropdown2"
+                        role="button" aria-haspopup="true" aria-expanded="false">
+                        Sustainability Index
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li><a href="/sustainabilityindex#sus-content" class="dropdown-item">The Index</a>
+                        </li>
+                        <li><a href="/sustainabilityindex#methodology" class="dropdown-item">Methodology</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/sustainabilityroadmap">Sustainability Roadmap</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="/partners" id="navbarDropdown3" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        Partners
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                        <li><a href="/partners" class="dropdown-item">Partner Stories</a></li>
+                        <li><a href="/partners#piconi" class="dropdown-item">- Piconi Farm</a></li>
+                        <li><a href="/partners#bird" class="dropdown-item">- Early Bird Wines</a></li>
+                        <li><a href="/partners#sprouts" class="dropdown-item">- Sprouts</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/contact">Contact Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="login.html" id="navbarDropdown4" role="button"
+                        aria-haspopup="true" aria-expanded="false">
+                        Login
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                        <li><a href="login.html" class="dropdown-item">See Your Index Score</a></li>
 
+                    </ul>
+                </li>
             </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-      </div>
+        </div>
     </nav>
   </div>
   <header>

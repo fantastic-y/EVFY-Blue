@@ -17,6 +17,36 @@ router.get("/", (req, res) => {
         root: path.join(__dirname, ".."),
     });
 });
+router.get("/about", (req, res) => {
+    //res.send('It works!');
+    res.sendFile("/html/about.html", {
+        root: path.join(__dirname, ".."),
+    });
+});
+router.get("/contact", (req, res) => {
+    //res.send('It works!');
+    res.sendFile("/html/contact.html", {
+        root: path.join(__dirname, ".."),
+    });
+});
+router.get("/partners", (req, res) => {
+    //res.send('It works!');
+    res.sendFile("/html/partners.html", {
+        root: path.join(__dirname, ".."),
+    });
+});
+router.get("/sustainabilityindex", (req, res) => {
+    //res.send('It works!');
+    res.sendFile("/html/sustainabilityindex.html", {
+        root: path.join(__dirname, ".."),
+    });
+});
+router.get("/sustainabilityroadmap", (req, res) => {
+    //res.send('It works!');
+    res.sendFile("/html/subscription-tiers.html", {
+        root: path.join(__dirname, ".."),
+    });
+});
 
 router.get(
     "/register",
