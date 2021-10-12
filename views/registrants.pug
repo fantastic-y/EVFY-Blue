@@ -1,0 +1,36 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        link(rel='preconnect', href='https://fonts.gstatic.com')
+        link(href='https://fonts.googleapis.com/css2?family=Sacramento&display=swap' type='text/css')
+        link(href='/css/style.css', rel='stylesheet', type='text/css')
+    body
+        header
+            nav
+                ul
+                    li
+                        a(href='/') Home
+                    li
+                        a(href='#') Blog
+                    li
+                        a(href='/register') Register
+        main
+            if registrations.length
+                table.listing-table
+                    tr
+                        th Name
+                        th Email
+                        th Username
+                        th Password
+                    each registration in registrations
+                        tr
+                            td= registration.name
+                            td= registration.email
+                            td= registration.username
+                            td= registration.password
+            else
+                p No registrations yet :(
+
+        footer &copy; Copyright 2021
+
