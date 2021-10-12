@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body id="contact">
+<body id="contactpage">
     <div id="container">
         <div class="container main-header sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu">
@@ -87,7 +87,6 @@
                 </div>
             </nav>
         </div>
-        <header></header>
         <main class="container">
         <section id="contact">
             <form class="contact-form" action="/contact.php">
@@ -96,54 +95,35 @@
                     below.
                   </h2>
                   <div class="form-group">
-                    <label for="first-name" class="text-secondary">First name*</label>
+                    <label for="first-name" class="text-secondary">First name</label>
                     <input type="text" class="form-control" id="first-name">
                   </div>
                   <div class="form-group">
-                    <label for="last-name" class="text-secondary">Last name*</label>
+                    <label for="last-name" class="text-secondary">Last name</label>
                     <input type="text" class="form-control" id="last-name">
                   </div>
+                  <p class="address" style="font-style: italic;">Address: </p>
                   <div class="form-group">
-                    <label for="email" class="text-secondary">Email*</label>
-                    <input type="email" class="form-control" id="email">
+                    <label for="street" class="text-secondary">Street</label>
+                    <input type="text" class="form-control" id="street">
                   </div>
                   <div class="form-group">
-                    <label for="address" class="text-secondary">Address:</label>
-                    <input type="text" class="form-control" id="address">
-                  </div>
-                  <div class="form-group">
-                    <label for="city" class="text-secondary">City*</label>
+                    <label for="city" class="text-secondary">City</label>
                     <input type="city" class="form-control" id="city">
                   </div>
                   <div class="form-group">
-                    <label for="county" class="text-secondary">County*</label>
-                    <input type="text" class="form-control" id="county">
-                  </div>
-                  <div class="form-group">
-                    <label for="zip" class="text-secondary">Zip*</label>
+                    <label for="zip" class="text-secondary">Zip</label>
                     <input type="number" class="form-control" id="zip">
                   </div>
                   <div class="form-group">
-                    <label for="phone" class="text-secondary">Phone number*</label>
+                    <label for="phone" class="text-secondary">Cell Phone</label>
                     <input type="number" class="form-control" id="phone">
                   </div>
                   <div class="form-group">
-                    <label for="rent-own" class="text-secondary">Rent or Own Property*</label>
-                    <input type="text" class="form-control" id="rent-own">
+                    <label for="email" class="text-secondary">Email</label>
+                    <input type="email" class="form-control" id="email">
                   </div>
-                  <div class="form-group">
-                    <label for="dealership" class="text-secondary">Dealership where car was purchased/leased*</label>
-                    <input type="text" class="form-control" id="dealership">
-                  </div>
-                  <div class="form-group">
-                    <label for="miles-per-year" class="text-secondary">Miles driven per year*</label>
-                    <input type="number" class="form-control" id="miles-per-year">
-                  </div>
-                  <div class="form-group">
-                    <label for="utility-provider" class="text-secondary">Utility Provider*</label>
-                    <input type="text" class="form-control" id="utility-provider">
-                  </div>
-                  <button type="submit" class="primary-btn ">SEND EMAIL</button>
+                  <button type="submit" class="primary-btn">Send</button>
                 </form>
               </section>
         </main>

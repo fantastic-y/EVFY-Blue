@@ -54,7 +54,7 @@
     background-size: 100% 800px;
     font-family: 'Nunito Sans', sans-serif;
 }
-#contact {
+#contactpage {
     background: no-repeat white url(/img/contact.jpg);
     background-size: 100%;
     font-family: 'Nunito Sans', sans-serif;
@@ -673,4 +673,77 @@ footer {
   }
   #subscription-tiers .btn:hover {
     background-color: #7fb75f;
+  }
+
+  /*contact css*/
+  #contact .contact-form .title {
+    font-weight: 200;
+    font-size: var(--font_size-description);
+  }
+  
+  #contact .contact-form {
+    flex-basis: 70%;
+    width: 50%;
+    height: max-content;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #contact .contact-form button {
+    align-self: flex-end;
+    background-color: #8cc63f;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 900px) {
+    #contact .contact-form {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #contact .contact-form {
+      flex-basis: 100%;
+      width: 100%;
+    }
+  }
+
+  /*contact input*/
+  .form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 2% 0;
+  }
+  
+  .form-group label {
+    flex-basis: 30%;
+  }
+  
+  .form-group input {
+    flex-basis: 60%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 1%;
+  }
+  
+  /* Chrome, Safari, Edge, Opera */
+  input::-webkit-outer-spin-button,
+  input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Firefox */
+  input[type="number"] {
+    -moz-appearance: textfield;
   }
