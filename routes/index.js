@@ -48,6 +48,13 @@ router.get("/sustainabilityroadmap", (req, res) => {
     });
 });
 
+router.get("/login", (req, res) => {
+    //res.send('It works!');
+    res.sendFile("/html/login.html", {
+        root: path.join(__dirname, ".."),
+    });
+});
+
 router.get(
     "/register",
     basic.check((req, res) => {
