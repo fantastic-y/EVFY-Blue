@@ -18,7 +18,7 @@ const schema = new mongoose.Schema({
     trim: true,
   },
   zip: {
-    type: Number,
+    type: String,
     trim: true,
   },
   phone: {
