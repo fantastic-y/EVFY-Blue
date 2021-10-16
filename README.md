@@ -1,6 +1,7 @@
 # EVFY-Blue
 
-Googlesheet-task tracking: https://docs.google.com/spreadsheets/d/1qGDpp162PH-0MmzILFjNbP8l3ZwQFblGSW_CtTueZa4/edit?usp=sharing
+Google sheet-task tracking: https://docs.google.com/spreadsheets/d/1zwaZC5VQ7zH_tNPvpS6jpdGFx0zav7QCHi0HCIFD2_g/edit#gid=0
+(Deprecated: https://docs.google.com/spreadsheets/d/1qGDpp162PH-0MmzILFjNbP8l3ZwQFblGSW_CtTueZa4/edit?usp=sharing)
 
 Branding:
   Font:
