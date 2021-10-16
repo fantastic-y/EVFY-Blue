@@ -1,16 +1,19 @@
 const express = require("express");
 const mongoose = require("mongoose");
+const passport =  require("passport");
+const LocalStrategy =  require("passport-local");
 const path = require("path");
 const auth = require("http-auth");
 const bcrypt = require("bcrypt");
+const bodyParser =  require("body-parser");
 const { check, validationResult } = require("express-validator");
-const User =  require("./models/user");
-const Contact = require("./models/Contact");
+const User =  require("../models/user");
+const Contact = require("../models/contact");
 const router = express.Router();
 const basic = auth.basic({
     file: path.join(__dirname, "../users.htpasswd"),
 });
-
+const app =  express();
 const expSession = require("express-session") ({
     secret:"mysecret",       //decode or encode session
     resave: false,          
