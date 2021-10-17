@@ -73,7 +73,7 @@
                             <a class="nav-link" href="/contact">Contact Us</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="login.html" id="navbarDropdown4" role="button"
+                            <a class="nav-link dropdown-toggle" href="/login" id="navbarDropdown4" role="button"
                                 aria-haspopup="true" aria-expanded="false">
                                 Login
                             </a>
@@ -88,7 +88,7 @@
         </div>
         <main class="container">
             <section id="contact">
-                <form class="contact-form" action="/contact.php">
+                <form class="contact-form" action="/savecontact" method="post">
                     <h2 class="title">
                         To learn more about the EVFY program, and to receive a Level 2 home charger, please fill out the
                         form
@@ -96,32 +96,32 @@
                     </h2>
                     <div class="form-group">
                         <label for="first-name" class="text-secondary">First name</label>
-                        <input type="text" class="form-control" id="first-name">
+                        <input type="text" class="form-control" name="firstname" id="firstname">
                     </div>
                     <div class="form-group">
                         <label for="last-name" class="text-secondary">Last name</label>
-                        <input type="text" class="form-control" id="last-name">
+                        <input type="text" class="form-control" name="lastname" id="lastname">
                     </div>
                     <p class="address" style="font-style: italic;">Address: </p>
                     <div class="form-group">
                         <label for="street" class="text-secondary">Street</label>
-                        <input type="text" class="form-control" id="street">
+                        <input type="text" class="form-control" name="street" id="street">
                     </div>
                     <div class="form-group">
                         <label for="city" class="text-secondary">City</label>
-                        <input type="city" class="form-control" id="city">
+                        <input type="city" class="form-control" name="city" id="city">
                     </div>
                     <div class="form-group">
                         <label for="zip" class="text-secondary">Zip</label>
-                        <input type="number" class="form-control" id="zip">
+                        <input type="number" class="form-control" name="zip" id="zip">
                     </div>
                     <div class="form-group">
                         <label for="phone" class="text-secondary">Cell Phone</label>
-                        <input type="number" class="form-control" id="phone">
+                        <input type="number" class="form-control" name="phone" id="phone">
                     </div>
                     <div class="form-group">
                         <label for="email" class="text-secondary">Email</label>
-                        <input type="email" class="form-control" id="email">
+                        <input type="email" class="form-control" name="email" id="email">
                     </div>
                     <button type="submit" class="primary-btn">Send</button>
                 </form>
