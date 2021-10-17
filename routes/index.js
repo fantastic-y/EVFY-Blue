@@ -137,8 +137,8 @@ router.post(
         contact
             .save()
             .then(() => {
-                res.json({
-                    contact,
+                res.sendFile("/html/contact.html", {
+                    root: path.join(__dirname, ".."),
                 });
             })
             .catch((err) => {
