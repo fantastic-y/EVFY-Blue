@@ -73,6 +73,12 @@ router.get("/login", (req, res) => {
     });
 });
 
+router.get("/profile", (req, res) => {
+    res.sendFile("/html/profile.html", {
+        root: path.join(__dirname, ".."),
+    });
+});
+
 app.post(
     "/login",
     passport.authenticate("local", {

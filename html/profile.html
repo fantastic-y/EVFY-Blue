@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>EVFY Partners</title>
+    <title>Contact Us</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit = no">
     <!--Embed Style Method-->
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body id="partners">
+<body id="profilepage">
     <div id="container">
         <div class="container main-header sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu">
@@ -87,57 +87,33 @@
                 </div>
             </nav>
         </div>
-        <header>
-            <h1>Our Partners</h1>
-            <button>Live Sustainably. Get Started Today!</button>
-        </header>
-        <main>
+        <main class="container">
+            <section id="profile-details">
+                <form class="profile-form" action="/edituser" method="post">
+                    <h2 class="title">
+                        User Profile
+                    </h2>
+
+                    <div class="form-group">
+                        <label for="last-name" class="text-secondary">Name</label>
+                        <input type="text" class="form-control" name="lastname" id="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="street" class="text-secondary">Street</label>
+                        <input type="text" class="form-control" name="street" id="street">
+                    </div>
+                    <div class="form-group">
+                        <label for="city" class="text-secondary">City</label>
+                        <input type="city" class="form-control" name="city" id="city">
+                    </div>
+                    <div class="form-group">
+                        <label for="zip" class="text-secondary">Zip</label>
+                        <input type="number" class="form-control" name="zip" id="zip">
+                    </div>
+                    <button type="submit" class="primary-btn">Edit</button>
+                </form>
+            </section>
         </main>
-        <section>
-            <div id="piconi" class="row">
-                <div class="col-12 col-sm-3">
-                    <img src="/img/piconi_1.jpg" alt="piconi farm fruit">
-                </div>
-                <div class="col-12 col-sm-3">
-                    <img src="/img/piconi_2.png" alt="piconi farm logo">
-                </div>
-                <div id="piconi-info" class="col-12 col-sm-6">
-                    <h2>Piconi Farms</h2>
-                    <p>Piconi Farms was built on the belief that meals should not only be from our farm to your table,
-                        but organic and sustainable – and most importantly as special as possible for you and your
-                        family. We carry this belief into everything we do.Piconi Farms speciality is home grown
-                        freshness and flavors created with the ingenuity and passion inspired by years of family
-                        tradition. </p>
-                </div>
-            </div>
-            <div id="bird" class="row">
-                <div id="bird-info" class="col-12 col-sm-8">
-                    <h2>Early Bird Wines</h2>
-                    <p>Early Bird Wine is America’s premier no additional sulfite wine. We produce our wines using a
-                        proprietary green technology, which results in a cleaner, fresher tasting wine with enhanced
-                        flavors and increased antioxidants for added health benefits and reduced risk of allergic
-                        reactions. Utilizing a 100% natural process, no added sulfites, and no chemical components, we
-                        are able to provide an affordable quality wine for you to enjoy, day and night, as part of your
-                        active, healthy lifestyle.</p>
-                </div>
-                <div class="col-12 col-sm-2">
-                    <img src="/img/bird_1.png" alt="early bird logo">
-                </div>
-                <div class="col-12 col-sm-2">
-                    <img src="/img/bird_2.png" alt="early bird wines">
-                </div>
-            </div>
-            <div id="sprouts" class="row">
-                <div class="col-12 col-sm-5">
-                    <img src="/img/Sprouts.png" alt="sprouts logo">
-                </div>
-                <div id="sprouts-info" class="col-12 col-sm-7">
-                    <h2>Sprouts Farmers Market</h2>
-                    <p>Our neighborhood grocery stores offer thousands of natural, organic & gluten-free foods. Discover
-                        fresh produce, meats, vitamins, supplements & more.</p>
-                </div>
-            </div>
-        </section>
         <footer>
             <div class="row">
                 <div class="col-sm-4">
