@@ -12,6 +12,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet" />
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <script>
+        function clearSession() {
+            sessionStorage.clear();
+            window.location.reload();
+        }
+    </script>
 </head>
 
 <body id="home">
@@ -80,8 +87,10 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
                                 <li><a href="/login" class="dropdown-item">See Your Index Score</a></li>
                                 <li><a href="/profile" class="dropdown-item">Profile</a></li>
-                            </ul>
+                                <li onclick="clearSession();" class="dropdown-item">Logout</li>
                         </li>
+                    </ul>
+                    </li>
                     </ul>
                 </div>
             </nav>
@@ -141,9 +150,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/return_to_top.js"></script>
     <script src="js/greeting.js"></script>
-    <script>
 
-    </script>
 </body>
 
 </html>

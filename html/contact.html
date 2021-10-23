@@ -80,6 +80,7 @@
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
                                 <li><a href="/login" class="dropdown-item">See Your Index Score</a></li>
                                 <li><a href="/profile" class="dropdown-item">Profile</a></li>
+                                <li onclick="clearSession();" class="dropdown-item">Logout</li>
 
                             </ul>
                         </li>
@@ -126,7 +127,8 @@
                     </div>
                     <!--Random codes-->
                     <div class="randomcode">
-                        <input id="entered-code" type="text" name="entered-code" placeholder="Enter characters on the right">
+                        <input id="entered-code" type="text" name="entered-code"
+                            placeholder="Enter characters on the right">
                         <p id="captcha-value"></p>
                     </div>
                     <button id="formsubmit" type="submit" class="primary-btn">Send</button>

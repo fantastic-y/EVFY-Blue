@@ -192,7 +192,7 @@ router.post(
             .withMessage("Please enter your email"),
     ],
     async (req, res) => {
-        const user = await User.findOne({ username: req.body.username });
+        let user = await User.findOne({ username: req.body.username });
         console.log(user);
         User.findOneAndUpdate(
             { username: req.body.username },
@@ -202,7 +202,8 @@ router.post(
                 email: req.body.email,
             }
         )
-            .then((user) => {
+            .then(async (user) => {
+                user = await User.findOne({ username: req.body.username });
                 res.render("profile", { user });
             })
             .catch((err) => {
