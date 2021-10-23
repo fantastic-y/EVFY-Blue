@@ -20,7 +20,7 @@ const expSession = require("express-session")({
     resave: false,
     saveUninitialized: true,
     cookie: {
-        httpOnly: true,
+        // httpOnly: true,
         secure: true,
         maxAge: 1 * 60 * 1000,
     },
@@ -95,30 +95,54 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/profile", (req, res) => {
-    res.sendFile("/html/profile.html", {
-        root: path.join(__dirname, ".."),
-    });
+    User.findOne(
+        { username: req.body.username || "test" },
+        function (err, user) {
+            if (err) {
+                err.message = "No user found!";
+                res.render("error", { user: user, error: err });
+            }
+            if (!user) {
+                let error = {};
+                error.message = "No user found!";
+                res.render("profile", { user, error });
+            }
+
+            res.render("profile", { user });
+            // if (!user.validPassword(password)) {
+            //     return done(null, false, { message: "Incorrect password." });
+            // }
+        }
+    );
 });
 
-router.post(
-    "/signin",
-    passport.authenticate("local", {
-        successRedirect: "/profile",
-        failureRedirect: "/login",
-    }),
-    function (req, res) {
-        console.log(res);
-    }
-);
+// router.post(
+//     "/signin",
+//     passport.authenticate("local", {
+//         successRedirect: "/profile",
+//         failureRedirect: "/login",
+//     }),
+//     function (req, res) {
+//         console.log(res);
+//     }
+// );
 
-router.get(
-    "/register",
-    basic.check((req, res) => {
-        res.render("form", {
-            title: "Registration form",
-        });
-    })
-);
+router.post("/signin", function (req, res) {
+    // console.log(res);
+    User.findOne({ username: req.body.username }, function (err, user) {
+        if (err) {
+            res.render("error", { user: user, error: err });
+        }
+        if (!user) {
+            res.render("error", { user: user, error: err });
+        }
+
+        res.render("profile", { user });
+        // if (!user.validPassword(password)) {
+        //     return done(null, false, { message: "Incorrect password." });
+        // }
+    });
+});
 
 router.post(
     "/register",
@@ -139,6 +163,9 @@ router.post(
             new User({
                 username: req.body.username,
                 password: req.body.password,
+                firstname: "",
+                lastname: "",
+                email: "",
             }),
             req.body.password,
             function (err, user) {
@@ -152,6 +179,36 @@ router.post(
                 }
             }
         );
+    }
+);
+
+router.post(
+    "/edituser",
+    [
+        check("email")
+            .isLength({
+                min: 1,
+            })
+            .withMessage("Please enter your email"),
+    ],
+    async (req, res) => {
+        const user = await User.findOne({ username: req.body.username });
+        console.log(user);
+        User.findOneAndUpdate(
+            { username: req.body.username },
+            {
+                firstname: req.body.firstname,
+                lastname: req.body.lastname,
+                email: req.body.email,
+            }
+        )
+            .then((user) => {
+                res.render("profile", { user });
+            })
+            .catch((err) => {
+                console.log(err);
+                res.send("Sorry! Something went wrong.");
+            });
     }
 );
 

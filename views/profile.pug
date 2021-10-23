@@ -1,0 +1,130 @@
+doctype html
+html(lang="en")
+	head
+		title Contact Us
+		meta(charset="UTF-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit = no")
+		// Embed Style Method
+		link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css")
+		// Link to styles css file
+		link(rel="stylesheet" href="css/styles.css")
+		link(href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet")
+		// Bootstrap CSS
+		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+	body#profilepage
+		#container
+			div(class="container main-header sticky-top")
+				nav(class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu")
+					a(class="navbar-brand logo" href="/")
+						img(src="/img/logo/EVFY_logo_white.png" alt="EVFY White Logo" class="d-inline-block align-top")
+						span(class="hidden") EVFY
+					button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation")
+						span(class="navbar-toggler-icon")
+					#toggleMobileMenu(class="collapse navbar-collapse")
+						ul(class="navbar-nav ms-auto text-center")
+							li(class="nav-item")
+								a(class="nav-link active" aria-current="page" href="/") Home
+							li(class="nav-item dropdown")
+								a#navbarDropdown1(class="nav-link dropdown-toggle" href="/about" role="button" aria-haspopup="true" aria-expanded="false")
+									| About EVFY
+								ul(class="dropdown-menu" aria-labelledby="navbarDropdown1")
+									li
+										a(href="/about#mission" class="dropdown-item") Our Mission
+									li
+										a(href="/about#team" class="dropdown-item") Our Team
+							li(class="nav-item dropdown")
+								a#navbarDropdown2(class="nav-link dropdown-toggle" href="/sustainabilityindex" role="button" aria-haspopup="true" aria-expanded="false")
+									| Sustainability Index
+								ul(class="dropdown-menu" aria-labelledby="navbarDropdown2")
+									li
+										a(href="/sustainabilityindex#sus-content" class="dropdown-item") The Index
+									li
+										a(href="/sustainabilityindex#methodology" class="dropdown-item") Methodology
+							li(class="nav-item")
+								a(class="nav-link" href="/sustainabilityroadmap") Sustainability Roadmap
+							li(class="nav-item dropdown")
+								a#navbarDropdown3(class="nav-link dropdown-toggle" href="/partners" role="button" aria-haspopup="true" aria-expanded="false")
+									| Partners
+								ul(class="dropdown-menu" aria-labelledby="navbarDropdown3")
+									li
+										a(href="/partners" class="dropdown-item") Partner Stories
+									li
+										a(href="/partners#piconi" class="dropdown-item") - Piconi Farm
+									li
+										a(href="/partners#bird" class="dropdown-item") - Early Bird Wines
+									li
+										a(href="/partners#sprouts" class="dropdown-item") - Sprouts
+							li(class="nav-item")
+								a(class="nav-link" href="/contact") Contact Us
+							li(class="nav-item dropdown")
+								a#navbarDropdown4(class="nav-link dropdown-toggle" href="/login" role="button" aria-haspopup="true" aria-expanded="false")
+									| Login
+								ul(class="dropdown-menu" aria-labelledby="navbarDropdown4")
+									li
+										a(href="/login" class="dropdown-item") See Your Index Score
+									li
+										a(href="/profile" class="dropdown-item") Profile
+			main(class="container")
+				section#profile-details
+					-user=user || {}
+					form(class="profile-form" action="/edituser" method="post")
+						h2(class="title")
+							| My Profile
+						div(class="form-group")
+							label(for="last-name" class="text-secondary") First Name
+							input#lastname(type="text" class="form-control" name="firstname" value=user.firstname || "")
+						div(class="form-group")
+							label(for="last-name" class="text-secondary") Last Name
+							input#lastname(type="text" class="form-control" name="lastname" value=user.lastname || "")
+						div(class="form-group")
+							label(for="street" class="text-secondary") Email
+							input#email(type="email" class="form-control" name="email" value=user.email || "")
+						div(class="form-group")
+							label(for="username" class="text-secondary") Username
+							input#username(type="text" class="form-control" name="username" value=user.username || "")
+						div(class="form-group")
+							label(for="password" class="text-secondary") Password
+							input#password(type="password" class="form-control" name="password" value=user.password || "")
+						div(class="profile-pic")
+							label(for="picture" class="text-secondary") Profile Picture
+							div
+						button(type="submit" class="primary-btn") Edit
+			footer
+				div(class="row")
+					div(class="col-sm-4")
+						h5
+							u Costumer Service Support:
+						p(class="footer-para mt-4") 1-877-GET-EVFY
+						p(class="footer-para")
+							a(href="mailto:info@ev-fy.com") info@ev-fy.com
+						div
+							// Please add font awsome link
+							// <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+							a(href="#" class="social-icon")
+								i(class="fa fa-facebook")
+							a(href="#" class="social-icon")
+								i(class="fa fa-twitter")
+							a(href="#" class="social-icon")
+								i(class="fa fa-linkedin")
+							a(href="#" class="social-icon")
+								i(class="fa fa-instagram")
+						div
+							a(href="#" class="privacy-policy") Privacy Policy
+							a(href="#" class="terms-of-use") Terms of Use
+					div(class="col-sm-4 footer-info")
+						h5
+							u Where to Find Us:
+						p(class="footer-para mt-4") EVFY, Inc.
+						p(class="footer-para") 4360 Park Terrace Dr. Suite 100,
+						p(class="footer-para") Westlake Village, CA 91361
+					div(class="col-sm-4")
+						img(class="logo-footer" src="/img/image1.png" alt="logo-footer")
+						p(class="sub-wow") Electrify your 
+							b EV
+		button#returnBtn(onclick="topFunction()" title="Go to top") Return to Top
+		// JavaScript Codes
+		script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js")
+		script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js")
+		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
+		script(src="js/return_to_top.js")
+		script(src="js/set-user.js")
