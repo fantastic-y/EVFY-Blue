@@ -4,12 +4,6 @@ Google sheet-task tracking: https://docs.google.com/spreadsheets/d/1zwaZC5VQ7zH_
 (Deprecated: https://docs.google.com/spreadsheets/d/1qGDpp162PH-0MmzILFjNbP8l3ZwQFblGSW_CtTueZa4/edit?usp=sharing)
 
 Branding:
-  Font:
-    Font TT Normas Pro light
-    TT Norms Pre medium
-    TT Norms Pro extra bold
-  Font placeholder until the client share the font with us:
-    Arial family
    
   Brand color (Anand will use bootstrap to setup):
     Primaries:
