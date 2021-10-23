@@ -106,9 +106,6 @@
 #about section p {
   font-size: 1.2em;
 }
-#about section img {
-  width: 500px;
-}
 
 #circle-bg {
   padding: 2em 0 2em 0;
@@ -131,10 +128,16 @@
   border: solid 1px #8cc63f;
   border-bottom: none;
 }
+#mission img, #sus-content img {
+  width: 500px;
+}
 
 #team, #methodology {
   width: 100%;
   border: solid 1px #8cc63f;
+}
+#team img, #methodology img {
+  width: 500px;
 }
 
 #mission-info, #team-info, #method-info, #index-info {
@@ -145,8 +148,8 @@
   padding-top: 100px;
 }
 #team-members img {
-  width: 200px;
   height: 200px;
+  width: 200px;
   margin-left: 80px;
 }
 #team-members h2, #team-members h3, #team-members h4 {

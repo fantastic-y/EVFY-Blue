@@ -22,7 +22,7 @@ function currentTime() {
 
     //determine AM or PM string
     if (hr == 12) {
-        ampm = "PM"; //set to PM
+        ampm = "Afternoon"; //set to PM
     } else if (hr > 20) {
         hr -= 12; //deduct 12 from hours greater than 12 (military time)
         ampm = "Night"; //set to PM
