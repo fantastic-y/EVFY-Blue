@@ -20,8 +20,8 @@ const expSession = require("express-session")({
     resave: false,
     saveUninitialized: true,
     cookie: {
-        httpOnly: true,
-        secure: true,
+        // httpOnly: true,
+        secure: false,
         maxAge: 1 * 60 * 1000,
     },
 });
