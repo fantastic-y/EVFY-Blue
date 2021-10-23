@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 
-<body id="contactpage">
+<body id="contactpage" onLoad="disableButton(true)">
     <div id="container">
         <div class="container main-header sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu">
@@ -124,7 +124,12 @@
                         <label for="email" class="text-secondary">Email</label>
                         <input type="email" class="form-control" name="email" id="email">
                     </div>
-                    <button type="submit" class="primary-btn">Send</button>
+                    <!--Random codes-->
+                    <div class="randomcode">
+                        <input id="entered-code" type="text" name="entered-code" placeholder="Enter characters on the right">
+                        <p id="captcha-value"></p>
+                    </div>
+                    <button id="formsubmit" type="submit" class="primary-btn">Send</button>
                 </form>
             </section>
         </main>
@@ -166,6 +171,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="js/return_to_top.js"></script>
+    <script src="js/captcha.js"></script>
 </body>
 
 </html>
