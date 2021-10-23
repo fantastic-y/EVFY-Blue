@@ -58,39 +58,39 @@ router.use(passport.session());
 
 router.get("/", (req, res) => {
     res.sendFile("/html/index.html", {
-        root: path.join(__dirname, ".."),
+        root: path.join(__dirname, "../public"),
     });
 });
 
 router.get("/about", (req, res) => {
     res.sendFile("/html/about.html", {
-        root: path.join(__dirname, ".."),
+        root: path.join(__dirname, "../public"),
     });
 });
 router.get("/contact", (req, res) => {
     res.sendFile("/html/contact.html", {
-        root: path.join(__dirname, ".."),
+        root: path.join(__dirname, "../public"),
     });
 });
 router.get("/partners", (req, res) => {
     res.sendFile("/html/partners.html", {
-        root: path.join(__dirname, ".."),
+        root: path.join(__dirname, "../public"),
     });
 });
 router.get("/sustainabilityindex", (req, res) => {
     res.sendFile("/html/sustainabilityindex.html", {
-        root: path.join(__dirname, ".."),
+        root: path.join(__dirname, "../public"),
     });
 });
 router.get("/sustainabilityroadmap", (req, res) => {
     res.sendFile("/html/subscription-tiers.html", {
-        root: path.join(__dirname, ".."),
+        root: path.join(__dirname, "../public"),
     });
 });
 
 router.get("/login", (req, res) => {
     res.sendFile("/html/login.html", {
-        root: path.join(__dirname, ".."),
+        root: path.join(__dirname, "../public"),
     });
 });
 
@@ -229,7 +229,7 @@ router.post(
             .save()
             .then(() => {
                 res.sendFile("/html/contact.html", {
-                    root: path.join(__dirname, ".."),
+                    root: path.join(__dirname, "../public"),
                 });
             })
             .catch((err) => {
