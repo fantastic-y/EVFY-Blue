@@ -1,8 +1,9 @@
 /* ---- random codes ---- */
 let code = ' '; //initialize to null value
 let getCode = ' '; //to store entered code
-//function to generate combination of characters
-function generateCode() {
+
+//get html element to display
+document.getElementById("captcha-value").innerHTML = ()=>{
     //create variables to store generated codes and the type of characters we want to show as codes
     
     let btnvalue; //for button boolean value
@@ -16,9 +17,6 @@ function generateCode() {
     }
     return code; //return the final accumulated string when loop ends
 }
-
-//get html element to display
-document.getElementById("captcha-value").innerHTML = generateCode();
 
 //disable button
 function disableButton(btnvalue) {
@@ -36,10 +34,7 @@ function disableButton(btnvalue) {
 
 //listen to user input code
 let codebox = document.getElementById("entered-code"); //get textbox
-codebox.addEventListener("input", evaluateCode); //listen to code entered in textbox
-
-//run function if detected user had entered a character in textbox
-function evaluateCode() {
+codebox.addEventListener("input", ()=>{
     getCode = document.getElementById("entered-code").value; //get character entered
     let charset1 = getCode.trim(); //remove any hidden characters entered
     let charset2 = code.trim(); //remove any hidden characters generated
@@ -47,7 +42,7 @@ function evaluateCode() {
     if (charset1.length == charset2.length && charset1 == charset2) {
         disableButton(false); //if match, run the function to enable button
     }
-}
+}); //listen to code entered in textbox
 
 //activate function
 disableButton();
