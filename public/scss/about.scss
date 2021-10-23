@@ -1,0 +1,99 @@
+@import "colors.scss";
+@import "font.scss";
+
+#about {
+    background: no-repeat white url(/img/about_bg.jpg);
+    background-size: 100% 800px;
+    font-family: $fontFamily;
+    header {
+        padding-top: 80px;
+        button {
+            border: none;
+            background-color: $primary-green;
+            color: white;
+            font-size: 1.2em;
+            width: 200px;
+            text-align: left;
+            padding: 0 15px;
+            margin: 0;
+        }
+        .circle {
+            display: inline-block;
+            margin: 0.5em;
+            padding: 1.3em 1.5em;
+            background-color: #fff;
+            border-radius: 50%;
+            width: 900px;
+            position: absolute;
+            left: 1000px;
+            top: -150px;
+            img {
+                width: auto;
+                float: right;
+            }
+        }
+    }
+    section {
+        h2{
+            padding-top: 20px;
+            color: $primary-green;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        h3 {
+            color: $primary-grey;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+        h4 {
+            color: $primary-grey;
+        }
+        p {
+            font-size: 1.2em;
+        }
+        img {
+            width: 500px;
+        }
+    }
+}
+
+#circle-bg {
+    padding: 2em 0 2em 0;
+    text-align: center;
+    display: inline;
+}
+
+#about-info {
+    width: 50%;
+    padding-top: 20px;
+    p {
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 10px;
+    }
+}
+
+#mission, #sus-content {
+    width: 100%;
+    background-color: #f5f5f5;
+    border: solid 1px $primary-green;
+    border-bottom: none;
+}
+#team, #methodology {
+    width: 100%;
+    border: solid 1px $primary-green;
+}
+#mission-info, #team-info, #method-info, #index-info {
+    padding: 30px 50px;
+}
+
+#team-members {
+    padding-top: 100px;
+    img {
+        width: 200px;
+        height: 200px;
+        margin-left: 80px;
+    }   
+    h2, h3, h4 {
+        text-align: center;
+    }
+}

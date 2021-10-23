@@ -1,0 +1,754 @@
+@import "colors.scss";
+@import "font.scss";
+@import "home.scss";
+@import "about.scss";
+
+
+/* return to top button */
+#returnBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed/sticky position */
+    bottom: 80px; /* Place the button at the bottom of the page */
+    right: 60px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it does not overlap */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: $primary-green;
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Increase font size */
+
+    &:hover {
+        background-color: #555; /* Add a dark-grey background on hover */
+    }
+}
+
+/* nav Styles to copy over */
+.hidden {
+    display: none;
+}
+.nav-font {
+    font-family: $fontFamily;
+    font-weight: 520;
+    font-size: 1.1em;
+}
+.nav-link {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
+.navbar {
+    background-color: rgba(0, 0, 0, 0.8);
+    padding: 1rem;
+}
+
+@media all and (min-width: 992px) {
+    .navbar .nav-item .dropdown-menu {
+        display: none;
+        background: $primary-green;
+    }
+    /* .navbar .nav-item:hover .nav-link{   } */
+    .navbar .nav-item:hover .dropdown-menu {
+        display: block;
+    }
+    .navbar .nav-item .dropdown-menu {
+        margin-top: 0;
+    }
+}
+
+#contactpage {
+    background: no-repeat white url(/img/contact.jpg);
+    background-size: 100%;
+    font-family: $fontFamily;
+}
+#partners {
+    background: no-repeat white url(/img/partners_bg.jpg);
+    background-size: 100% 800px;
+    font-family: $fontFamily;
+}
+#login {
+    background: no-repeat white url(/img/login-bg.jpg);
+    background-size: 100% 800px;
+    font-family: $fontFamily;
+}
+#sustainability-index {
+    background: no-repeat white url(/img/sus-index_bg.jpg);
+    background-size: 100% 800px;
+    font-family: $fontFamily;
+}
+#subscription-tiers {
+    background: url(/img/subs.jpg) no-repeat;
+    background-size: 100% 800px;
+    font-family: $fontFamily;
+}
+#subscription-tiers .layer {
+    width: 100%;
+    height: 800px;
+    background: #000;
+    opacity: 60%;
+    position: absolute;
+    margin-left: -100px;
+    margin-top: -180px;
+}
+header {
+    width: 100%;
+    padding-left: 100px;
+    padding-top: 50px;
+    height: 700px;
+}
+.main-header {
+    width: 100%;
+    padding-left: 50px;
+    margin: 2em auto 0 auto;
+    min-height: 100px;
+    height: 100px;
+}
+.main-header .logo img {
+    width: 100px;
+    height: 100px;
+    margin: 0 2em 0 0;
+    float: left;
+}
+#sustainability-index section h2 {
+    padding-top: 20px;
+    color: $primary-green;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#sustainability-index section p {
+    font-size: 1.2em;
+}
+
+/* partners */
+#partners header h1,
+#sustainability-index header h1 {
+    font-size: 100px;
+    padding-top: 300px;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+#partners header button,
+#sustainability-index header button {
+    border: none;
+    background-color: $primary-green;
+    color: white;
+    font-size: 1.2em;
+    width: 200px;
+    padding: 0 15px;
+    margin-top: 25%;
+    /*margin-left: 41.5%;*/
+}
+#subscription-tiers header button {
+    border: none;
+    background-color: $primary-green;
+    color: white;
+    font-size: 1.2em;
+    width: 200px;
+    text-align: left;
+    padding: 0 15px;
+    margin-left: 50px;
+    margin-top: 50px;
+}
+#about-info {
+    width: 50%;
+    padding-top: 20px;
+}
+#partners section img {
+    height: 240px;
+}
+#piconi {
+    width: 100%;
+    background-color: #f5f5f5;
+    border: solid 1px $primary-green;
+    border-bottom: none;
+}
+#sprouts {
+    width: 100%;
+    background-color: #f5f5f5;
+    border: solid 1px $primary-green;
+}
+#bird {
+    width: 100%;
+    border: solid 1px $primary-green;
+    border-bottom: none;
+}
+#partners section h2 {
+    padding-top: 20px;
+    padding-left: 30px;
+    color: $primary-green;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+#partners section p {
+    font-size: 1.2em;
+    padding-left: 30px;
+}
+/* login */
+#login header h1 {
+    font-size: 100px;
+    color: white;
+}
+#login header h2 {
+    font-size: 50px;
+    color: $primary-green;
+    font-weight: normal;
+    text-decoration: underline;
+    padding-top: 30px;
+}
+/* Full-width input fields */
+input[type="text"],
+input[type="password"] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+    width: auto;
+    padding: 10px 18px;
+    background-color: #c62610;
+    color: white;
+}
+
+/* position the close button */
+.imgcontainer {
+    margin: 24px 0 12px 0;
+    position: relative;
+}
+
+.container {
+    padding: 16px;
+}
+
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 70%;
+    height: 100%;
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: #fefefe;
+    margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+    border: 1px solid #888;
+    width: 60% !important; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: #000;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: red;
+    cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s;
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0);
+    }
+    to {
+        -webkit-transform: scale(1);
+    }
+}
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+    span.psw {
+        display: block;
+        float: none;
+    }
+    .cancelbtn {
+        width: 100%;
+    }
+}
+
+/* sustainability index */
+#sustainability-index section img {
+    height: 350px;
+}
+
+/* Footer */
+footer {
+    background: rgb(32, 29, 29);
+    width: 100%;
+    color: #fff;
+    padding: 2em;
+    font-family: $fontFamily;
+}
+footer a:link {
+    text-decoration: none;
+    color: #fff;
+}
+footer a {
+    color: white;
+    font-size: small;
+}
+.logo-footer,
+.sub-wow {
+    position: absolute;
+    right: 0;
+}
+.social-icon {
+    color: #fff;
+    margin-right: 0.3em;
+}
+.footer-info {
+    margin-left: -6em;
+}
+.footer-para {
+    line-height: 3.9pt;
+}
+.logo-footer {
+    height: auto;
+    width: 6em;
+}
+.sub-wow {
+    font-size: 10pt;
+    margin-top: 7.9em;
+}
+
+/* Subscription-tiers head section */
+#subscription-tiers .center {
+    text-align: center;
+}
+#subscription-tiers header h3 {
+    color: #fff;
+    line-height: 0.9pt;
+    font-weight: normal;
+    font-size: 40pt;
+}
+.tires {
+    margin-left: 3.4em;
+}
+.sub_info {
+    max-width: 32em;
+    color: #fff;
+    margin-left: 10em;
+    float: right;
+    font-size: 16pt;
+    margin-right: 2em;
+}
+.header-text1 {
+    display: inline-flex;
+}
+#subscription-tiers main {
+    display: inline-flex;
+}
+table {
+    border: 3px solid #fff;
+}
+thead {
+    background-color: #7fb75f;
+    color: #fff;
+}
+td {
+    font-size: 14pt;
+}
+td,
+th {
+    border: 2px solid #fff;
+    padding: 0.5em;
+}
+h3 {
+    color: $primary-green;
+    font-weight: bold;
+    font-size: 24pt;
+}
+
+/* subscription-tires body */
+#subscription-tiers {
+    margin: 0;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    /*background-color: #ededed;*/
+}
+
+.all_item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.span1 {
+    margin-top: 1.2em;
+    margin-bottom: 1em;
+    margin-left: 1.6em;
+}
+.span2 {
+    margin-bottom: 1em;
+}
+.span3 {
+    margin-bottom: 1em;
+    margin-left: 1.6em;
+}
+.span1,
+.span2,
+.span3,
+.logo {
+    line-height: 0.9pt;
+    position: relative;
+    margin-right: -0.1em;
+}
+.vert-line {
+    height: 15em;
+    border-right: 4px solid #fff;
+    position: relative;
+}
+.sub_info,
+.right {
+    margin-right: 2em;
+}
+.left,
+.middle,
+.right {
+    margin-top: 3em;
+    padding-top: 100px;
+    padding-left: 50px;
+}
+.sub_info p {
+    position: relative;
+}
+
+/*subscription-tiers main body */
+.first-div {
+    margin-top: 7em;
+    margin-bottom: 25em;
+    width: 100%;
+}
+
+.reflection {
+    width: 510px;
+    height: 450px;
+    position: relative;
+    background: url(/img/mobile.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 0;
+    /*box-shadow: 0px 50px 70px rgba(0, 0, 0, 0.3), 0px 10px 10px rgba(0, 0, 0, 0.1);*/
+}
+.reflection::after {
+    content: "";
+    margin: 0;
+    background: inherit;
+    width: 28.14em;
+    height: 40%;
+    position: absolute;
+    bottom: -32%;
+    left: 0;
+    background-size: cover;
+    transform: scaleY(-1);
+    background-position: bottom;
+    opacity: 0.4;
+    background-repeat: inherit;
+}
+.reflection::before {
+    content: "";
+    width: 28.14em;
+    height: 40%;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    bottom: -32%;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), #ededed);
+    z-index: 1;
+    margin: inherit;
+}
+.phone {
+    background: url(/img/Picture4.png);
+    width: auto;
+    height: 268px;
+    position: relative;
+    background-size: contain;
+    background-repeat: no-repeat;
+    right: 50%;
+    left: 19.4%;
+    top: 21%;
+    bottom: 50%;
+}
+.phone::after {
+    content: "";
+    margin: 0;
+    background: inherit;
+    width: 8.54em;
+    height: 25%;
+    position: absolute;
+    bottom: -78%;
+    left: 0;
+    background-size: cover;
+    transform: scaleY(-1);
+    background-position: bottom;
+    opacity: 0.3;
+    background-repeat: inherit;
+}
+.para-3 {
+    width: 80%;
+    font-size: 21pt;
+}
+.para-4 {
+    font-size: 14pt;
+}
+.sec-div {
+    width: 100%;
+    margin-bottom: -15em;
+}
+.div-center {
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+}
+/* Subscription-tiers Tables */
+.td1 {
+    background-color: #d5e3cf;
+}
+.td2 {
+    background-color: #ebf1e9;
+}
+.first-column {
+    font-weight: bold;
+    font-weight: 16pt;
+}
+#subscription-tiers section {
+    margin-bottom: 50px;
+}
+#signup-button {
+    font-size: 18pt;
+    position: absolute;
+    left: 50%;
+    right: 30%;
+    top: 110%;
+    transform: translate(-50%, -50%);
+    padding: 0.2em;
+    border: 0;
+}
+#subscription-tiers .btn:hover {
+    background-color: #7fb75f;
+}
+
+/*contact css*/
+#contact {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+#contact .contact-form .title {
+    font-weight: 200;
+    font-size: var(--font_size-description);
+}
+
+#contact .contact-form {
+    width: 50%;
+    height: max-content;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact .contact-form button {
+    align-self: flex-end;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    width: 100%;
+    height: 45px;
+}
+
+@media (max-width: 900px) {
+    #contact .contact-form {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #contact .contact-form {
+        flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+/*contact input*/
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    margin: 2% 0;
+}
+
+.form-group label {
+    flex-basis: 30%;
+}
+
+.form-group input {
+    flex-basis: 60%;
+    height: 40px;
+    border-radius: 8px;
+    padding: 1%;
+}
+
+.randomcode {
+    margin:  20px 0 10px 0px;
+}
+.randomcode input {
+    height: 40px;
+    /*margin-top: 20px;*/
+    width: 70%;
+}
+.randomcode p {
+    height: 40px;
+    float: right;
+    background-color: lightgrey;
+    width: 100px;
+    text-align: center;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+
+.login-section {
+    display: flex;
+}
+
+.login-section > div {
+    flex-basis: 50%;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.login-section > div > h2 {
+    color: $primary-green;
+    text-align: center;
+}
+
+.login-section > div:first-child {
+    border-right: 2px solid $primary-grey;
+}
+
+.login-section label {
+    width: 100%;
+}
+
+.login-section button {
+    width: 100%;
+    padding: 5px 20px;
+    border: none;
+    background-color: $primary-green;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 5px;
+}
+
+#profilepage {
+    background-color: whitesmoke;
+}
+
+#profile-details {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+}
+#profile-details .profile-form .title {
+    font-weight: 200;
+    font-size: 1.4rem;
+}
+
+#profile-details .profile-form {
+    width: 50%;
+    height: max-content;
+    padding: 2.5rem;
+    background-color: white;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+#profile-details .profile-form button {
+    align-self: flex-end;
+    background-color: $primary-green;
+    color: white;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+}
+
+#profile-details .profile-form div.profile-pic {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+#profile-details .profile-form div.profile-pic > div {
+    width: 250px;
+    height: 250px;
+    background: no-repeat center/contain url("/img/profile_pic.jpg");
+}
+
+.click-here-link {
+    cursor: pointer;
+}
