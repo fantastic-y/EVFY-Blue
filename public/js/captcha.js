@@ -3,7 +3,7 @@ let code = ' '; //initialize to null value
 let getCode = ' '; //to store entered code
 
 //get html element to display
-document.getElementById("captcha-value").innerHTML = ()=>{
+function generateCode() {
     //create variables to store generated codes and the type of characters we want to show as codes
     
     let btnvalue; //for button boolean value
@@ -17,6 +17,8 @@ document.getElementById("captcha-value").innerHTML = ()=>{
     }
     return code; //return the final accumulated string when loop ends
 }
+
+document.getElementById("captcha-value").innerHTML = generateCode();
 
 //disable button
 function disableButton(btnvalue) {
