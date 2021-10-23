@@ -60,8 +60,19 @@ function currentTime() {
         timeZone = "ET";
     }
 
+    let username = "";
+    let time = "";
+
+    if (
+        sessionStorage.getItem("username") != null &&
+        sessionStorage.getItem("username") != ""
+    ) {
+        username = sessionStorage.getItem("username");
+
+        time = "Good" + " " + ampm + " " + username + ". Welcome back!";
+    }
+
     //assemble time format to display
-    let time = "Good" + " " + ampm + " " + "username" + ". Welcome back!";
 
     //assemble current local time and time zone on HTML elements
     document.getElementById("greeting").innerText = time; //adding time
