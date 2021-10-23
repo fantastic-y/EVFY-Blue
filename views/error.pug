@@ -1,0 +1,37 @@
+
+block content
+    section#register-form
+        -user = user || {}
+
+        if error
+            ul.my-errors
+                li= error.message
+
+        //- h3 Register to Subscribe
+        //- form(action="/register" method="POST" class="form-registration")
+
+        //-     label(for="username") Username:
+        //-     input(
+        //-         type="text"
+        //-         id="username"
+        //-         name="username"
+        //-         class="form-control"
+        //-         value=user.username
+        //-     )
+
+        //-     label(for="password") Password:
+        //-     input(
+        //-         type="password"
+        //-         id="password"
+        //-         name="password"
+        //-         class="form-control"
+        //-         value=user.password
+        //-     )
+
+        //-     input(
+        //-         type="submit"
+        //-         value="Register"
+        //-         class="submit-buttton"
+        //-     )
+
+    a(href="/login") Back

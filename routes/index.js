@@ -13,7 +13,7 @@ const router = express.Router();
 const basic = auth.basic({
     file: path.join(__dirname, "../users.htpasswd"),
 });
-const app = express();
+// const app = express();
 
 const expSession = require("express-session")({
     secret: "mysecret", //decode or encode session
@@ -28,19 +28,40 @@ const expSession = require("express-session")({
 
 passport.serializeUser(User.serializeUser()); //session encoding
 passport.deserializeUser(User.deserializeUser()); //session decoding
-passport.use(new LocalStrategy(User.authenticate()));
-app.use(bodyParser.urlencoded({ extended: true }));
-app.use(bodyParser.json());
+passport.use(
+    new LocalStrategy(function (username, password, done) {
+        User.findOne({ username: username }, function (err, user) {
+            if (err) {
+                return done(err);
+            }
+            if (!user) {
+                return done(null, false, { message: "Incorrect username." });
+            }
+            // if (!user.validPassword(password)) {
+            //     return done(null, false, { message: "Incorrect password." });
+            // }
+            return done(null, user);
+        });
+    })
+);
 
-app.use(expSession);
-app.use(passport.initialize());
-app.use(passport.session());
+router.use(bodyParser.urlencoded({ extended: true }));
+router.use(bodyParser.json());
+
+router.use(expSession);
+
+router.use(passport.initialize());
+router.use(passport.session());
+
+// router.use(passport.initialize());
+// router.use(passport.session());
 
 router.get("/", (req, res) => {
     res.sendFile("/html/index.html", {
         root: path.join(__dirname, ".."),
     });
 });
+
 router.get("/about", (req, res) => {
     res.sendFile("/html/about.html", {
         root: path.join(__dirname, ".."),
@@ -79,13 +100,15 @@ router.get("/profile", (req, res) => {
     });
 });
 
-app.post(
-    "/login",
+router.post(
+    "/signin",
     passport.authenticate("local", {
-        successRedirect: "/userprofile",
+        successRedirect: "/profile",
         failureRedirect: "/login",
     }),
-    function (req, res) {}
+    function (req, res) {
+        console.log(res);
+    }
 );
 
 router.get(
@@ -113,16 +136,20 @@ router.post(
     ],
     async (req, res) => {
         User.register(
-            new User({ username: req.body.username }),
+            new User({
+                username: req.body.username,
+                password: req.body.password,
+            }),
             req.body.password,
             function (err, user) {
                 if (err) {
                     console.log(err);
-                    res.render("register");
+                    res.render("error", { user: user, error: err });
+                } else {
+                    passport.authenticate("local")(req, res, function () {
+                        res.redirect("/login");
+                    });
                 }
-                passport.authenticate("local")(req, res, function () {
-                    res.redirect("/login");
-                });
             }
         );
     }

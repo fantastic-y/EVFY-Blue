@@ -91,24 +91,32 @@
             <section id="profile-details">
                 <form class="profile-form" action="/edituser" method="post">
                     <h2 class="title">
-                        User Profile
+                        My Profile
                     </h2>
 
                     <div class="form-group">
-                        <label for="last-name" class="text-secondary">Name</label>
+                        <label for="last-name" class="text-secondary">First Name</label>
+                        <input type="text" class="form-control" name="firstname" id="lastname">
+                    </div>
+                    <div class="form-group">
+                        <label for="last-name" class="text-secondary">Last Name</label>
                         <input type="text" class="form-control" name="lastname" id="lastname">
                     </div>
                     <div class="form-group">
-                        <label for="street" class="text-secondary">Street</label>
-                        <input type="text" class="form-control" name="street" id="street">
+                        <label for="street" class="text-secondary">Email</label>
+                        <input type="email" class="form-control" name="email" id="street">
                     </div>
                     <div class="form-group">
-                        <label for="city" class="text-secondary">City</label>
-                        <input type="city" class="form-control" name="city" id="city">
+                        <label for="username" class="text-secondary">Username</label>
+                        <input type="text" class="form-control" name="username" id="city">
                     </div>
                     <div class="form-group">
-                        <label for="zip" class="text-secondary">Zip</label>
-                        <input type="number" class="form-control" name="zip" id="zip">
+                        <label for="password" class="text-secondary">Password</label>
+                        <input type="password" class="form-control" name="password" id="zip">
+                    </div>
+                    <div class="profile-pic">
+                        <label for="password" class="text-secondary">Profile Picture</label>
+                        <div></div>
                     </div>
                     <button type="submit" class="primary-btn">Edit</button>
                 </form>

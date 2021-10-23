@@ -88,10 +88,11 @@
         </div>
         <header>
             <h1>See Your Index Score</h1>
-            <h2 onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Click Here.</h2>
+            <h2 class="click-here-link" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Click Here.</h2>
 
             <div id="id01" class="modal">
-                <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="modal-content animate" action="/action_page.php" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close"
                             title="Close Modal">&times;</span>
@@ -99,28 +100,30 @@
                     <div class="container">
                         <div class="login-section">
                             <div>
-                                <h2>Sign In</h2>
-                                <label for="uname"><b>Username</b></label>
-                                <input type="text" placeholder="Enter Username" name="uname" required>
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required>
-                                <label>
-                                    <span class="psw"><a href="#">Forgot password?</a></span>
-                                </label>
-                                <button type="submit">Sign In</button>
-
+                                <form action="/signin" method="post">
+                                    <h2>Sign In</h2>
+                                    <label for="username"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="username" required>
+                                    <label for="password"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+                                    <label>
+                                        <span class="psw"><a href="#">Forgot password?</a></span>
+                                    </label>
+                                    <button type="submit">Sign In</button>
+                                </form>
                             </div>
                             <div>
-                                <h2>Register</h2>
-                                <label for="uname"><b>Username</b></label>
-                                <input type="text" placeholder="Enter Username" name="uname" required>
-                                <label for="psw"><b>Password</b></label>
-                                <input type="password" placeholder="Enter Password" name="psw" required>
-                                <label>
-                                    <input type="checkbox" checked="checked" name="remember"> Remember me
-                                </label>
-                                <button type="submit">Register</button>
-
+                                <form action="/register" method="post">
+                                    <h2>Register</h2>
+                                    <label for="username"><b>Username</b></label>
+                                    <input type="text" placeholder="Enter Username" name="username" required>
+                                    <label for="password"><b>Password</b></label>
+                                    <input type="password" placeholder="Enter Password" name="password" required>
+                                    <label>
+                                        <span class="psw"></span>
+                                    </label>
+                                    <button type="submit">Register</button>
+                                </form>
                             </div>
                         </div>
                     </div>
@@ -129,7 +132,7 @@
                             class="cancelbtn">Cancel</button>
                         <span class="psw"><a href="#">Forgot password?</a></span>
                     </div> -->
-                </form>
+                </div>
             </div>
         </header>
         <main>

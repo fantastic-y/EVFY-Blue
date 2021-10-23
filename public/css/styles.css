@@ -871,3 +871,19 @@ input[type="number"] {
     padding: 5px 20px;
     border-radius: 8px;
 }
+
+#profile-details .profile-form div.profile-pic {
+    display: flex;
+    justify-content: space-between;
+    margin: 2% 0;
+}
+
+#profile-details .profile-form div.profile-pic > div {
+    width: 250px;
+    height: 250px;
+    background: no-repeat center/contain url("/img/profile_pic.jpg");
+}
+
+.click-here-link {
+    cursor: pointer;
+}
