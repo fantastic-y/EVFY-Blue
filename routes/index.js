@@ -95,6 +95,12 @@ router.get("/login", (req, res) => {
 });
 
 router.get("/profile", (req, res) => {
+    res.render("profile");
+});
+
+router.post("/getUserDetails", (req, res) => {
+    console.log(req.body);
+
     User.findOne(
         { username: req.body.username || "test" },
         function (err, user) {
@@ -102,16 +108,8 @@ router.get("/profile", (req, res) => {
                 err.message = "No user found!";
                 res.render("error", { user: user, error: err });
             }
-            if (!user) {
-                let error = {};
-                error.message = "No user found!";
-                res.render("profile", { user, error });
-            }
 
-            res.render("profile", { user });
-            // if (!user.validPassword(password)) {
-            //     return done(null, false, { message: "Incorrect password." });
-            // }
+            res.send(user);
         }
     );
 });

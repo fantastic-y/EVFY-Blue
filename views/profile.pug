@@ -11,6 +11,16 @@ html(lang="en")
 		link(href="https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap" rel="stylesheet")
 		// Bootstrap CSS
 		link(rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css")
+		script.
+			function clearSession() {
+			sessionStorage.clear();
+			document.querySelector("#username").value = "";
+			document.querySelector("#password").value = "";
+			document.querySelector("#email").value = "";
+			document.querySelector("#firstname").value = "";
+			document.querySelector("#lastname").value = "";
+			window.location.reload();
+			}
 	body#profilepage
 		#container
 			div(class="container main-header sticky-top")
@@ -64,6 +74,7 @@ html(lang="en")
 										a(href="/login" class="dropdown-item") See Your Index Score
 									li
 										a(href="/profile" class="dropdown-item") Profile
+									li(onclick="clearSession();" class="dropdown-item") Logout
 			main(class="container")
 				section#profile-details
 					-user=user || {}
@@ -72,7 +83,7 @@ html(lang="en")
 							| My Profile
 						div(class="form-group")
 							label(for="last-name" class="text-secondary") First Name
-							input#lastname(type="text" class="form-control" name="firstname" value=user.firstname || "")
+							input#firstname(type="text" class="form-control" name="firstname" value=user.firstname || "")
 						div(class="form-group")
 							label(for="last-name" class="text-secondary") Last Name
 							input#lastname(type="text" class="form-control" name="lastname" value=user.lastname || "")
