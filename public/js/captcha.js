@@ -43,8 +43,11 @@ codebox.addEventListener("input", ()=>{
     //test if code entered matches the number of genereated characters
     if (charset1.length == charset2.length && charset1 == charset2) {
         disableButton(false); //if match, run the function to enable button
+    } else {
+        disableButton(true);
     }
-}); //listen to code entered in textbox
+}
+); //listen to code entered in textbox
 
 //activate function
 disableButton();
