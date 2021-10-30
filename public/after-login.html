@@ -15,6 +15,7 @@
     <script>
         function clearSession() {
             sessionStorage.clear();
+            alert("Logged out successfully!");
             window.location.reload();
         }
     </script>
@@ -25,7 +26,8 @@
         <div class="container main-header sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu">
                 <a class="navbar-brand logo" href="/">
-                    <img src="/img/logo/EVFY_logos-Black_green_green_border_RGB_HR.png" alt="EVFY White Logo" class="d-inline-block align-top">
+                    <img src="/img/logo/EVFY_logos-Black_green_green_border_RGB_HR.png" alt="EVFY White Logo"
+                        class="d-inline-block align-top">
                     <span class="hidden">EVFY</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu"
@@ -75,19 +77,24 @@
                                 <li><a href="/partners#sprouts" class="dropdown-item">- Sprouts</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact Us</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/contact" id="navbarDropdown4" role="button"
+                                aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                <li><a onclick="clearSession();" class="dropdown-item">Logout</a></li>
+                            </ul>
                         </li>
                         <div class="btn-group">
-                            <button id="login-button" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <button id="login-button" type="button" class="btn dropdown-toggle" data-toggle="dropdown"
+                                aria-haspopup="true" aria-expanded="false">
                                 Welcome
                             </button>
                             <div class="dropdown-menu">
                                 <a href="/after-login" class="dropdown-item">See Your Index Score</a>
                                 <a href="/profile" class="dropdown-item">Profile</a>
                                 <div class="dropdown-divider"></div>
-                                    <a onclick="clearSession();" class="dropdown-item">Logout</a>
-                                </div>
+                                <a onclick="clearSession();" class="dropdown-item">Logout</a>
+                            </div>
                         </div>
                     </ul>
                 </div>
@@ -108,7 +115,7 @@
                         Your current score is 500.
                     </div>
                 </div>
-                    <!-- <div class="container" style="background-color:#f1f1f1">
+                <!-- <div class="container" style="background-color:#f1f1f1">
                         <button type="button" onclick="document.getElementById('id01').style.display='none'"
                             class="cancelbtn">Cancel</button>
                         <span class="psw"><a href="#">Forgot password?</a></span>

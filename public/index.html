@@ -16,6 +16,7 @@
     <script>
         function clearSession() {
             sessionStorage.clear();
+            alert("Logged out successfully!");
             window.location.reload();
         }
     </script>
@@ -26,7 +27,8 @@
         <div class="container main-header sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu">
                 <a class="navbar-brand logo" href="/">
-                    <img src="/img/logo/EVFY_logos-Black_green_green_border_RGB_HR.png" alt="EVFY White Logo" class="d-inline-block align-top">
+                    <img src="/img/logo/EVFY_logos-Black_green_green_border_RGB_HR.png" alt="EVFY White Logo"
+                        class="d-inline-block align-top">
                     <span class="hidden">EVFY</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu"
@@ -76,8 +78,12 @@
                                 <li><a href="/partners#sprouts" class="dropdown-item">- Sprouts</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/contact">Contact Us</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="/contact" id="navbarDropdown4" role="button"
+                                aria-haspopup="true" aria-expanded="false">Contact Us</a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
+                                <li><a onclick="clearSession();" class="dropdown-item">Logout</a></li>
+                            </ul>
                         </li>
                         <button id="login-button" onclick="window.location.href='/login';">
                             Login
