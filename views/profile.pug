@@ -19,21 +19,20 @@ html(lang="en")
 			document.querySelector("#email").value = "";
 			document.querySelector("#firstname").value = "";
 			document.querySelector("#lastname").value = "";
-			window.location.reload();
 			}
 	body#profilepage
 		#container
 			div(class="container main-header sticky-top")
 				nav(class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu")
 					a(class="navbar-brand logo" href="/")
-						img(src="/img/logo/EVFY_logos-Black_green_green_border_RGB_HR.png" alt="EVFY White Logo" class="d-inline-block align-top")
+						img(src="/img/logo/EVFY_logo_white.png" alt="EVFY White Logo" class="d-inline-block align-top")
 						span(class="hidden") EVFY
 					button(class="navbar-toggler" type="button" data-toggle="collapse" data-target="#toggleMobileMenu" aria-controls="toggleMobileMenu" aria-expanded="false" aria-label="Toggle navigation")
 						span(class="navbar-toggler-icon")
 					#toggleMobileMenu(class="collapse navbar-collapse")
 						ul(class="navbar-nav ms-auto text-center")
 							li(class="nav-item")
-								a(class="nav-link" aria-current="page" href="/") Home
+								a(class="nav-link active" aria-current="page" href="/") Home
 							li(class="nav-item dropdown")
 								a#navbarDropdown1(class="nav-link dropdown-toggle" href="/about" role="button" aria-haspopup="true" aria-expanded="false")
 									| About EVFY
@@ -66,12 +65,12 @@ html(lang="en")
 										a(href="/partners#sprouts" class="dropdown-item") - Sprouts
 							li(class="nav-item")
 								a(class="nav-link" href="/contact") Contact Us
-							li(class="nav-item dropdown active")
+							li(class="nav-item dropdown")
 								a#navbarDropdown4(class="nav-link dropdown-toggle" href="/login" role="button" aria-haspopup="true" aria-expanded="false")
-									| Welcome
+									| Login
 								ul(class="dropdown-menu" aria-labelledby="navbarDropdown4")
 									li
-										a(href="/after-login" class="dropdown-item") See Your Index Score
+										a(href="/login" class="dropdown-item") See Your Index Score
 									li
 										a(href="/profile" class="dropdown-item") Profile
 									li(onclick="clearSession();" class="dropdown-item") Logout
@@ -139,3 +138,5 @@ html(lang="en")
 		script(src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js")
 		script(src="js/return_to_top.js")
 		script(src="js/set-user.js")
+		script.
+			window.location.replace(window.location.origin)
