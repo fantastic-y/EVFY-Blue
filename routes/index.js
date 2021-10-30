@@ -94,6 +94,12 @@ router.get("/login", (req, res) => {
     });
 });
 
+router.get("/after-login", (req, res) => {
+    res.sendFile("after-login.html", {
+        root: path.join(__dirname, "../public"),
+    });
+});
+
 router.get("/profile", (req, res) => {
     res.render("profile");
 });

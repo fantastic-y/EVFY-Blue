@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>The Sustainability Index</title>
+    <title>See your index score</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit = no">
     <!--Embed Style Method-->
@@ -20,7 +20,7 @@
     </script>
 </head>
 
-<body id="sustainability-index">
+<body id="after-login">
     <div id="container">
         <div class="container main-header sticky-top">
             <nav class="navbar navbar-expand-lg navbar-light nav-font pb-1 navbar-custom main-menu">
@@ -48,7 +48,7 @@
                                 <li><a href="/about#team" class="dropdown-item">Our Team</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item dropdown active">
+                        <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="/sustainabilityindex" id="navbarDropdown2"
                                 role="button" aria-haspopup="true" aria-expanded="false">
                                 Sustainability Index
@@ -78,53 +78,46 @@
                         <li class="nav-item">
                             <a class="nav-link" href="/contact">Contact Us</a>
                         </li>
-                        <button id="login-button" onclick="window.location.href='/login';">
-                            Login
-                        </button>
+                        <div class="btn-group">
+                            <button id="login-button" type="button" class="btn dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Welcome
+                            </button>
+                            <div class="dropdown-menu">
+                                <a href="/after-login" class="dropdown-item">See Your Index Score</a>
+                                <a href="/profile" class="dropdown-item">Profile</a>
+                                <div class="dropdown-divider"></div>
+                                    <a onclick="clearSession();" class="dropdown-item">Logout</a>
+                                </div>
+                        </div>
                     </ul>
                 </div>
             </nav>
         </div>
         <header>
-            <h1>The Sustainability Index</h1>
-            <button onclick="window.location.href='/contact';">Live Sustainably. Get Started Today!</button>
+            <h1>See Your Index Score</h1>
+            <h2 class="click-here-link" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Click Here.</h2>
+
+            <div id="id01" class="modal">
+                <div class="modal-content animate" action="/action_page.php" method="post">
+                    <div class="imgcontainer">
+                        <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                            title="Close Modal">&times;</span>
+                    </div>
+                    <div class="container">
+                        Your current score is 500.
+                    </div>
+                </div>
+                    <!-- <div class="container" style="background-color:#f1f1f1">
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                            class="cancelbtn">Cancel</button>
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                    </div> -->
+            </div>
         </header>
         <main>
         </main>
         <section>
-            <div id="sus-content" class="row">
-                <div id="index-info" class="col-12 col-sm-6">
-                    <h2>The Sustainability Index</h2>
-                    <p>
-                        <span>The Sustainability Index is a tiering system to reward strong sustainable behavior. It is
-                            an opportunity to earn points based on choices that consumers make in their everyday lives.
-                        </span>
-                        <br>
-                        <span>The program provides consumers with a sustainability score based on daily consumption
-                            choices made around reducing their carbon footprint.</span>
-                    </p>
-                </div>
-                <div class="col-12 col-sm-6">
-                    <img src="/img/sus-index-content.jpg" alt="sustainability-index">
-                </div>
-            </div>
-            <div id="methodology" class="row">
-                <div class="col-12 col-sm-5">
-                    <img src="/img/methodology.jpg" alt="methodology">
-                </div>
-                <div id="method-info" class="col-12 col-sm-7">
-                    <h2>Our Methodology</h2>
-                    <p>Our approach is three-fold. To improve your sustainability score, EVFY helps you to:</p>
-                    <ul>
-                        <li>Incorporate daily energy usage within your home and by using your electric vehicle.</li>
-                        <li>Reduce your energy bill and enjoy substantial savings.</li>
-                        <li>Implement a fully sustainable lifestyle via a phased rollout of ways to improve consumption
-                            behaviors with discounted products and services including food, clothing, air travel, hotels
-                            and other elements to help improve your sustainability index - and ultimately live as carbon
-                            free as possible.</li>
-                    </ul>
-                </div>
-            </div>
         </section>
         <footer>
             <div class="row">

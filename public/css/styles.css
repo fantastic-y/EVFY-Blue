@@ -1,9 +1,10 @@
 #login-button {
-  margin-left: 80px;
+  margin-left: 25px;
   border-radius: 20px;
   border: none;
   background-color: #8cc63f;
-  color: #000;
+  color: #fff;
+  width: 100px;
 }
 #home {
   background: linear-gradient(to right, black, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0)), no-repeat url(/img/homepage_bg.jpg);
@@ -220,12 +221,6 @@
 
 
 @media all and (min-width: 992px) {
-  .navbar .nav-item .dropdown-menu {
-    display: none;
-    background: #8cc63f;
-  }
-
-  /* .navbar .nav-item:hover .nav-link{   } */
   .navbar .nav-item:hover .dropdown-menu {
     display: block;
   }
@@ -234,6 +229,25 @@
     margin-top: 0;
   }
 }
+
+
+@media screen and (max-width: 992px) {
+  .navbar .nav-item:hover .dropdown-menu {
+    display: block;
+  }
+  .navbar .nav-item:hover .dropdown-menu a {
+    text-align: center;
+  }
+
+  .navbar .btngroup {
+    display: block;
+  }
+
+  .navbar .nav-item .dropdown-menu {
+    margin-top: 0;
+  }
+}
+
 #contactpage {
   background: no-repeat white url(/img/contact.jpg);
   background-size: 100%;
@@ -246,7 +260,7 @@
   font-family: "Nunito Sans", sans-serif;
 }
 
-#login {
+#login, #after-login {
   background: no-repeat white url(/img/login-bg.jpg);
   background-size: 100% 800px;
   font-family: "Nunito Sans", sans-serif;
@@ -386,12 +400,12 @@ header {
 }
 
 /* login */
-#login header h1 {
+#login header h1, #after-login header h1 {
   font-size: 100px;
   color: white;
 }
 
-#login header h2 {
+#login header h2, #after-login header h2 {
   font-size: 50px;
   color: #8cc63f;
   font-weight: normal;

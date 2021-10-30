@@ -77,16 +77,8 @@
           <li class="nav-item">
             <a class="nav-link" href="/contact">Contact Us</a>
           </li>
-          <button id="login-button" class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="/login" id="navbarDropdown4" role="button"
-                aria-haspopup="true" aria-expanded="false">
-                Login
-            </a>
-            <ul class="dropdown-menu" aria-labelledby="navbarDropdown4">
-                <li><a href="/login" class="dropdown-item">See Your Index Score</a></li>
-                <li><a href="/profile" class="dropdown-item">Profile</a></li>
-                <li onclick="clearSession();" class="dropdown-item">Logout</li>
-            </ul>
+          <button id="login-button" onclick="window.location.href='/login';">
+            Login
         </button>
         </ul>
       </div>
