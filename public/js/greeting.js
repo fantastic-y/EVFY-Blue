@@ -69,7 +69,13 @@ function currentTime() {
     ) {
         username = sessionStorage.getItem("username");
 
-        time = "Good" + " " + ampm + " " + username + ". Welcome back!";
+        time =
+            "Good" +
+            " " +
+            ampm +
+            " " +
+            username +
+            ". Welcome back Registered User!";
     }
 
     //assemble time format to display

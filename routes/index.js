@@ -10,9 +10,6 @@ const { check, validationResult } = require("express-validator");
 const User = require("../models/user");
 const Contact = require("../models/contact");
 const router = express.Router();
-const basic = auth.basic({
-    file: path.join(__dirname, "../users.htpasswd"),
-});
 // const app = express();
 
 const expSession = require("express-session")({
