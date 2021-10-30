@@ -239,8 +239,9 @@
     text-align: center;
   }
 
-  .navbar .btngroup {
-    display: block;
+  #login-button {
+    position: relative;
+    left: 40%;
   }
 
   .navbar .nav-item .dropdown-menu {
